@@ -4,7 +4,6 @@ import urllib
 import json 
 
 def main(url):
-    #url = 'https://api.github.com/repos/apache/airflow/commits'
     opener=urllib.request.build_opener()
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
     page = opener.open(url)
@@ -22,7 +21,6 @@ def main(url):
     for index, col in enumerate(df_cols):
         df[col] = collected[index]
     print (df)
-    df.to_csv('commit_sample.csv')
     return df 
 
 if __name__ == '__main__':
