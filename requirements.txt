@@ -1,3 +1,4 @@
+alembic
 requests
 beautifulsoup4
 pandas
