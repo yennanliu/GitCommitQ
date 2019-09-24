@@ -1,0 +1,2397 @@
+HTTP/1.1 200 OK
+Server: GitHub.com
+Date: Tue, 24 Sep 2019 15:04:26 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 122796
+Status: 200 OK
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 58
+X-RateLimit-Reset: 1569341027
+Cache-Control: public, max-age=60, s-maxage=60
+Vary: Accept
+ETag: "490ebf8c28635ba33e8498fa0e5d5893"
+Last-Modified: Tue, 24 Sep 2019 13:54:01 GMT
+X-GitHub-Media-Type: github.v3; format=json
+Link: <https://api.github.com/repositories/33884891/commits?page=2>; rel="next", <https://api.github.com/repositories/33884891/commits?page=236>; rel="last"
+Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+X-GitHub-Request-Id: C2DF:1CD0:10EAF7:1E091F:5D8A3079
+
+[
+  {
+    "sha": "3140c45b832d008431d9cb4ce5a36a8b57c9df70",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MzE0MGM0NWI4MzJkMDA4NDMxZDljYjRjZTVhMzZhOGI1N2M5ZGY3MA==",
+    "commit": {
+      "author": {
+        "name": "Kaxil Naik",
+        "email": "kaxilnaik@gmail.com",
+        "date": "2019-09-24T13:54:01Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2019-09-24T13:54:01Z"
+      },
+      "message": "[AIRFLOW-4309] Remove Broken Dag error after Dag is deleted (#6102)",
+      "tree": {
+        "sha": "c8c6fe49e84030f055c87a5f0f9b96805a4b7dc9",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/c8c6fe49e84030f055c87a5f0f9b96805a4b7dc9"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/3140c45b832d008431d9cb4ce5a36a8b57c9df70",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdih/5CRBK7hj4Ov3rIwAAdHIIAHkTna9sy45Ne4vVqZDYFpOz\nAM5w1vwCliLfFc3e/w/2+96IdZF7ZNnlTuW24v2YbiFMhKo1gF5Xtj3ILqnw71xU\nJ1nyu5DViKgHFyJmSSvwxXhvmy1qPoYCkhRksnhETGgZCVGnjlPGirkwrEhYtT3N\nVvOinD/gX8STbv0F4uc51U0NfqKF+BQ+Rtz1kaKfKmPcsT+eElqT+UVzyZeR7wmO\nMgN6E/SEqQEuZIAgDYRTBUt6JX4SzqhkmUmjeH1vTfH7/F1qTDZnKfY13DYmlSHH\nus9HakHtdcm1rM492AduOCDorYAAKZiISQns3I4mLlqNb0PHzV/aROccBy71Ff8=\n=PuBc\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c8c6fe49e84030f055c87a5f0f9b96805a4b7dc9\nparent 418143222026fa27ed0ebdd12b1566ef78fbcccb\nauthor Kaxil Naik <kaxilnaik@gmail.com> 1569333241 +0100\ncommitter GitHub <noreply@github.com> 1569333241 +0100\n\n[AIRFLOW-4309] Remove Broken Dag error after Dag is deleted (#6102)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/3140c45b832d008431d9cb4ce5a36a8b57c9df70",
+    "html_url": "https://github.com/apache/airflow/commit/3140c45b832d008431d9cb4ce5a36a8b57c9df70",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/3140c45b832d008431d9cb4ce5a36a8b57c9df70/comments",
+    "author": {
+      "login": "kaxil",
+      "id": 8811558,
+      "node_id": "MDQ6VXNlcjg4MTE1NTg=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8811558?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kaxil",
+      "html_url": "https://github.com/kaxil",
+      "followers_url": "https://api.github.com/users/kaxil/followers",
+      "following_url": "https://api.github.com/users/kaxil/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kaxil/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kaxil/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kaxil/subscriptions",
+      "organizations_url": "https://api.github.com/users/kaxil/orgs",
+      "repos_url": "https://api.github.com/users/kaxil/repos",
+      "events_url": "https://api.github.com/users/kaxil/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kaxil/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "418143222026fa27ed0ebdd12b1566ef78fbcccb",
+        "url": "https://api.github.com/repos/apache/airflow/commits/418143222026fa27ed0ebdd12b1566ef78fbcccb",
+        "html_url": "https://github.com/apache/airflow/commit/418143222026fa27ed0ebdd12b1566ef78fbcccb"
+      }
+    ]
+  },
+  {
+    "sha": "418143222026fa27ed0ebdd12b1566ef78fbcccb",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6NDE4MTQzMjIyMDI2ZmEyN2VkMGViZGQxMmIxNTY2ZWY3OGZiY2NjYg==",
+    "commit": {
+      "author": {
+        "name": "Bharath Palaksha",
+        "email": "bharathp87@gmail.com",
+        "date": "2019-09-24T12:42:16Z"
+      },
+      "committer": {
+        "name": "Ash Berlin-Taylor",
+        "email": "ash_github@firemirror.com",
+        "date": "2019-09-24T12:42:16Z"
+      },
+      "message": "[AIRFLOW-5419] Correctly use `sudo` to kill cleared tasks when running with impersonation (#6176)\n\nBug fix to #6026",
+      "tree": {
+        "sha": "3a8662b70040c3874f1bd4eae9a9b338af846a6c",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/3a8662b70040c3874f1bd4eae9a9b338af846a6c"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/418143222026fa27ed0ebdd12b1566ef78fbcccb",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/418143222026fa27ed0ebdd12b1566ef78fbcccb",
+    "html_url": "https://github.com/apache/airflow/commit/418143222026fa27ed0ebdd12b1566ef78fbcccb",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/418143222026fa27ed0ebdd12b1566ef78fbcccb/comments",
+    "author": {
+      "login": "bharathpalaksha",
+      "id": 342603,
+      "node_id": "MDQ6VXNlcjM0MjYwMw==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/342603?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bharathpalaksha",
+      "html_url": "https://github.com/bharathpalaksha",
+      "followers_url": "https://api.github.com/users/bharathpalaksha/followers",
+      "following_url": "https://api.github.com/users/bharathpalaksha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bharathpalaksha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bharathpalaksha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bharathpalaksha/subscriptions",
+      "organizations_url": "https://api.github.com/users/bharathpalaksha/orgs",
+      "repos_url": "https://api.github.com/users/bharathpalaksha/repos",
+      "events_url": "https://api.github.com/users/bharathpalaksha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bharathpalaksha/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ashb",
+      "id": 34150,
+      "node_id": "MDQ6VXNlcjM0MTUw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/34150?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ashb",
+      "html_url": "https://github.com/ashb",
+      "followers_url": "https://api.github.com/users/ashb/followers",
+      "following_url": "https://api.github.com/users/ashb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ashb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ashb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ashb/subscriptions",
+      "organizations_url": "https://api.github.com/users/ashb/orgs",
+      "repos_url": "https://api.github.com/users/ashb/repos",
+      "events_url": "https://api.github.com/users/ashb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ashb/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c5284856b2e353097a235e07afccf1676d4018d",
+        "url": "https://api.github.com/repos/apache/airflow/commits/9c5284856b2e353097a235e07afccf1676d4018d",
+        "html_url": "https://github.com/apache/airflow/commit/9c5284856b2e353097a235e07afccf1676d4018d"
+      }
+    ]
+  },
+  {
+    "sha": "9c5284856b2e353097a235e07afccf1676d4018d",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6OWM1Mjg0ODU2YjJlMzUzMDk3YTIzNWUwN2FmY2NmMTY3NmQ0MDE4ZA==",
+    "commit": {
+      "author": {
+        "name": "eladkal",
+        "email": "45845474+eladkal@users.noreply.github.com",
+        "date": "2019-09-24T11:21:45Z"
+      },
+      "committer": {
+        "name": "Felix Uellendall",
+        "email": "feluelle@users.noreply.github.com",
+        "date": "2019-09-24T11:21:45Z"
+      },
+      "message": "[AIRFLOW-5398] Update contrib example DAGs to context manager (#5998)\n\n- replaces the explicit assignment of a dag to a task to be implicit via context manager\r\n- changes task dependencies to be defined via bit shifting operator instead of set_upstream/set_downstream\r\n- update docs for papermill to extract the code example from the code",
+      "tree": {
+        "sha": "94ec93db10a97e6579b1e4c93e5a62f6c3d75a1b",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/94ec93db10a97e6579b1e4c93e5a62f6c3d75a1b"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/9c5284856b2e353097a235e07afccf1676d4018d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/9c5284856b2e353097a235e07afccf1676d4018d",
+    "html_url": "https://github.com/apache/airflow/commit/9c5284856b2e353097a235e07afccf1676d4018d",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/9c5284856b2e353097a235e07afccf1676d4018d/comments",
+    "author": {
+      "login": "eladkal",
+      "id": 45845474,
+      "node_id": "MDQ6VXNlcjQ1ODQ1NDc0",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/45845474?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/eladkal",
+      "html_url": "https://github.com/eladkal",
+      "followers_url": "https://api.github.com/users/eladkal/followers",
+      "following_url": "https://api.github.com/users/eladkal/following{/other_user}",
+      "gists_url": "https://api.github.com/users/eladkal/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/eladkal/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/eladkal/subscriptions",
+      "organizations_url": "https://api.github.com/users/eladkal/orgs",
+      "repos_url": "https://api.github.com/users/eladkal/repos",
+      "events_url": "https://api.github.com/users/eladkal/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/eladkal/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "feluelle",
+      "id": 23282078,
+      "node_id": "MDQ6VXNlcjIzMjgyMDc4",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/23282078?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/feluelle",
+      "html_url": "https://github.com/feluelle",
+      "followers_url": "https://api.github.com/users/feluelle/followers",
+      "following_url": "https://api.github.com/users/feluelle/following{/other_user}",
+      "gists_url": "https://api.github.com/users/feluelle/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/feluelle/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/feluelle/subscriptions",
+      "organizations_url": "https://api.github.com/users/feluelle/orgs",
+      "repos_url": "https://api.github.com/users/feluelle/repos",
+      "events_url": "https://api.github.com/users/feluelle/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/feluelle/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5f9ab7a1d5cd4540e953005d43898be08ed56d60",
+        "url": "https://api.github.com/repos/apache/airflow/commits/5f9ab7a1d5cd4540e953005d43898be08ed56d60",
+        "html_url": "https://github.com/apache/airflow/commit/5f9ab7a1d5cd4540e953005d43898be08ed56d60"
+      }
+    ]
+  },
+  {
+    "sha": "5f9ab7a1d5cd4540e953005d43898be08ed56d60",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6NWY5YWI3YTFkNWNkNDU0MGU5NTMwMDVkNDM4OThiZTA4ZWQ1NmQ2MA==",
+    "commit": {
+      "author": {
+        "name": "Ash Berlin-Taylor",
+        "email": "ash_github@firemirror.com",
+        "date": "2019-09-24T09:23:51Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2019-09-24T09:23:51Z"
+      },
+      "message": "[AIRFLOW-774] Fix long-broken DAG parsing Statsd metrics (#6157)\n\nSince we switched to using sub-processes to parse the DAG files sometime\r\nback in 2016(!) the metrics we have been emitting about dag bag size and\r\nparsing have been incorrect.\r\n\r\nWe have also been emitting metrics from the webserver which is going to\r\nbe become wrong as we move towards a stateless webserver.\r\n\r\nTo fix both of these issues I have stopped emitting the metrics from\r\nmodels.DagBag and only emit them from inside the\r\nDagFileProcessorManager.\r\n\r\n(There was also a bug in the `dag.loading-duration.*` we were emitting\r\nfrom the DagBag code where the \"dag_file\" part of that metric was empty.\r\nI have fixed that even though I have now deprecated that metric. The\r\nwebserver was emitting the right metric though so many people wouldn't\r\nnotice)",
+      "tree": {
+        "sha": "77ab59ea070495c90220c7e835eb1350f79492fc",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/77ab59ea070495c90220c7e835eb1350f79492fc"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/5f9ab7a1d5cd4540e953005d43898be08ed56d60",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdieCnCRBK7hj4Ov3rIwAAdHIIADJD3Y1zSGqOv0HLmIkW997s\ni5UBbGXxiOJtYuHM7fOrNHKyTyOCe1V5o4qvTTZQCptROa9iUJShuxLQeY8FnlIP\nOs8ABTB5UTKoJdZdtUoIC5UCwkLsTONTs9Mfz2Ucb52uzmXN+ufiq7sVkQ3p8eL1\nASbX8sxhHLDoYZ60DG6ZxAPS3ISYm6d1tcyRq+HulMWkk9RFbR2/nD10GtKjrUza\nm1Q5etyPJW2aSuQEOd7y1htzWc7GNkWAL5kVMGhmYjAycvIeel7PQDTy5o3mZFaW\n3rbAcvLcPm8ON/bwxOB3H4MrGKi0PhUiqqvlmlvWYtJ0S65ASS3Jf7f2xGgv++Y=\n=tzuA\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 77ab59ea070495c90220c7e835eb1350f79492fc\nparent dc3bfe470c2d6ad9cda801635e3514088d38aed5\nauthor Ash Berlin-Taylor <ash_github@firemirror.com> 1569317031 +0100\ncommitter GitHub <noreply@github.com> 1569317031 +0100\n\n[AIRFLOW-774] Fix long-broken DAG parsing Statsd metrics (#6157)\n\nSince we switched to using sub-processes to parse the DAG files sometime\r\nback in 2016(!) the metrics we have been emitting about dag bag size and\r\nparsing have been incorrect.\r\n\r\nWe have also been emitting metrics from the webserver which is going to\r\nbe become wrong as we move towards a stateless webserver.\r\n\r\nTo fix both of these issues I have stopped emitting the metrics from\r\nmodels.DagBag and only emit them from inside the\r\nDagFileProcessorManager.\r\n\r\n(There was also a bug in the `dag.loading-duration.*` we were emitting\r\nfrom the DagBag code where the \"dag_file\" part of that metric was empty.\r\nI have fixed that even though I have now deprecated that metric. The\r\nwebserver was emitting the right metric though so many people wouldn't\r\nnotice)"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/5f9ab7a1d5cd4540e953005d43898be08ed56d60",
+    "html_url": "https://github.com/apache/airflow/commit/5f9ab7a1d5cd4540e953005d43898be08ed56d60",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/5f9ab7a1d5cd4540e953005d43898be08ed56d60/comments",
+    "author": {
+      "login": "ashb",
+      "id": 34150,
+      "node_id": "MDQ6VXNlcjM0MTUw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/34150?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ashb",
+      "html_url": "https://github.com/ashb",
+      "followers_url": "https://api.github.com/users/ashb/followers",
+      "following_url": "https://api.github.com/users/ashb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ashb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ashb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ashb/subscriptions",
+      "organizations_url": "https://api.github.com/users/ashb/orgs",
+      "repos_url": "https://api.github.com/users/ashb/repos",
+      "events_url": "https://api.github.com/users/ashb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ashb/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dc3bfe470c2d6ad9cda801635e3514088d38aed5",
+        "url": "https://api.github.com/repos/apache/airflow/commits/dc3bfe470c2d6ad9cda801635e3514088d38aed5",
+        "html_url": "https://github.com/apache/airflow/commit/dc3bfe470c2d6ad9cda801635e3514088d38aed5"
+      }
+    ]
+  },
+  {
+    "sha": "dc3bfe470c2d6ad9cda801635e3514088d38aed5",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6ZGMzYmZlNDcwYzJkNmFkOWNkYTgwMTYzNWUzNTE0MDg4ZDM4YWVkNQ==",
+    "commit": {
+      "author": {
+        "name": "Osmar Coronel",
+        "email": "oac2@illinois.edu",
+        "date": "2019-09-24T09:22:01Z"
+      },
+      "committer": {
+        "name": "Ash Berlin-Taylor",
+        "email": "ash_github@firemirror.com",
+        "date": "2019-09-24T09:22:01Z"
+      },
+      "message": "[AIRFLOW-4741] Optionally report task errors to Sentry (#5407)\n\nThis commit intends to add Sentry to the core functionality of\r\nAirflow. It takes an approach like Statsd for simple integration.\r\nThe commit makes use of tagging and breadcrumbs for more error\r\ninformation.",
+      "tree": {
+        "sha": "0605dce7081628221f722ee594d3fa4dac828c46",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/0605dce7081628221f722ee594d3fa4dac828c46"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/dc3bfe470c2d6ad9cda801635e3514088d38aed5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/dc3bfe470c2d6ad9cda801635e3514088d38aed5",
+    "html_url": "https://github.com/apache/airflow/commit/dc3bfe470c2d6ad9cda801635e3514088d38aed5",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/dc3bfe470c2d6ad9cda801635e3514088d38aed5/comments",
+    "author": {
+      "login": "tiopi",
+      "id": 13202929,
+      "node_id": "MDQ6VXNlcjEzMjAyOTI5",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/13202929?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tiopi",
+      "html_url": "https://github.com/tiopi",
+      "followers_url": "https://api.github.com/users/tiopi/followers",
+      "following_url": "https://api.github.com/users/tiopi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tiopi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tiopi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tiopi/subscriptions",
+      "organizations_url": "https://api.github.com/users/tiopi/orgs",
+      "repos_url": "https://api.github.com/users/tiopi/repos",
+      "events_url": "https://api.github.com/users/tiopi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tiopi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ashb",
+      "id": 34150,
+      "node_id": "MDQ6VXNlcjM0MTUw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/34150?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ashb",
+      "html_url": "https://github.com/ashb",
+      "followers_url": "https://api.github.com/users/ashb/followers",
+      "following_url": "https://api.github.com/users/ashb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ashb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ashb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ashb/subscriptions",
+      "organizations_url": "https://api.github.com/users/ashb/orgs",
+      "repos_url": "https://api.github.com/users/ashb/repos",
+      "events_url": "https://api.github.com/users/ashb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ashb/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "04c7fd01e2a58bb809cdd50a607dff53351bbf53",
+        "url": "https://api.github.com/repos/apache/airflow/commits/04c7fd01e2a58bb809cdd50a607dff53351bbf53",
+        "html_url": "https://github.com/apache/airflow/commit/04c7fd01e2a58bb809cdd50a607dff53351bbf53"
+      }
+    ]
+  },
+  {
+    "sha": "04c7fd01e2a58bb809cdd50a607dff53351bbf53",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MDRjN2ZkMDFlMmE1OGJiODA5Y2RkNTBhNjA3ZGZmNTMzNTFiYmY1Mw==",
+    "commit": {
+      "author": {
+        "name": "Bharath Palaksha",
+        "email": "bharathp87@gmail.com",
+        "date": "2019-09-24T09:08:05Z"
+      },
+      "committer": {
+        "name": "Ash Berlin-Taylor",
+        "email": "ash_github@firemirror.com",
+        "date": "2019-09-24T09:08:05Z"
+      },
+      "message": "[AIRFLOW-5419] - Use `sudo` to kill cleared tasks when running with impersonation (#6026)\n\nMarking task failed doesn't kill the task when it is run through impersonation(run_as_user)",
+      "tree": {
+        "sha": "ea11da44c4c2b975e8fdc281f7a8384a01661f5f",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/ea11da44c4c2b975e8fdc281f7a8384a01661f5f"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/04c7fd01e2a58bb809cdd50a607dff53351bbf53",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/04c7fd01e2a58bb809cdd50a607dff53351bbf53",
+    "html_url": "https://github.com/apache/airflow/commit/04c7fd01e2a58bb809cdd50a607dff53351bbf53",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/04c7fd01e2a58bb809cdd50a607dff53351bbf53/comments",
+    "author": {
+      "login": "bharathpalaksha",
+      "id": 342603,
+      "node_id": "MDQ6VXNlcjM0MjYwMw==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/342603?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bharathpalaksha",
+      "html_url": "https://github.com/bharathpalaksha",
+      "followers_url": "https://api.github.com/users/bharathpalaksha/followers",
+      "following_url": "https://api.github.com/users/bharathpalaksha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/bharathpalaksha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/bharathpalaksha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/bharathpalaksha/subscriptions",
+      "organizations_url": "https://api.github.com/users/bharathpalaksha/orgs",
+      "repos_url": "https://api.github.com/users/bharathpalaksha/repos",
+      "events_url": "https://api.github.com/users/bharathpalaksha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/bharathpalaksha/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ashb",
+      "id": 34150,
+      "node_id": "MDQ6VXNlcjM0MTUw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/34150?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ashb",
+      "html_url": "https://github.com/ashb",
+      "followers_url": "https://api.github.com/users/ashb/followers",
+      "following_url": "https://api.github.com/users/ashb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ashb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ashb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ashb/subscriptions",
+      "organizations_url": "https://api.github.com/users/ashb/orgs",
+      "repos_url": "https://api.github.com/users/ashb/repos",
+      "events_url": "https://api.github.com/users/ashb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ashb/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7506c95efa3f7992a5c40b1a198a71993038bf83",
+        "url": "https://api.github.com/repos/apache/airflow/commits/7506c95efa3f7992a5c40b1a198a71993038bf83",
+        "html_url": "https://github.com/apache/airflow/commit/7506c95efa3f7992a5c40b1a198a71993038bf83"
+      }
+    ]
+  },
+  {
+    "sha": "7506c95efa3f7992a5c40b1a198a71993038bf83",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6NzUwNmM5NWVmYTNmNzk5MmE1YzQwYjFhMTk4YTcxOTkzMDM4YmY4Mw==",
+    "commit": {
+      "author": {
+        "name": "Mike Dias",
+        "email": "mike.rodrigues.dias@gmail.com",
+        "date": "2019-09-23T11:43:08Z"
+      },
+      "committer": {
+        "name": "Ash Berlin-Taylor",
+        "email": "ash_github@firemirror.com",
+        "date": "2019-09-23T11:43:08Z"
+      },
+      "message": "[AIRFLOW-5508] Add config setting to limit which StatsD metrics are emitted (#6130)",
+      "tree": {
+        "sha": "0232dc991f2524bfa0a899ed7fb4cc637cc84f05",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/0232dc991f2524bfa0a899ed7fb4cc637cc84f05"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/7506c95efa3f7992a5c40b1a198a71993038bf83",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/7506c95efa3f7992a5c40b1a198a71993038bf83",
+    "html_url": "https://github.com/apache/airflow/commit/7506c95efa3f7992a5c40b1a198a71993038bf83",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/7506c95efa3f7992a5c40b1a198a71993038bf83/comments",
+    "author": {
+      "login": "mikedias",
+      "id": 472304,
+      "node_id": "MDQ6VXNlcjQ3MjMwNA==",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/472304?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mikedias",
+      "html_url": "https://github.com/mikedias",
+      "followers_url": "https://api.github.com/users/mikedias/followers",
+      "following_url": "https://api.github.com/users/mikedias/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mikedias/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mikedias/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mikedias/subscriptions",
+      "organizations_url": "https://api.github.com/users/mikedias/orgs",
+      "repos_url": "https://api.github.com/users/mikedias/repos",
+      "events_url": "https://api.github.com/users/mikedias/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mikedias/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ashb",
+      "id": 34150,
+      "node_id": "MDQ6VXNlcjM0MTUw",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/34150?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ashb",
+      "html_url": "https://github.com/ashb",
+      "followers_url": "https://api.github.com/users/ashb/followers",
+      "following_url": "https://api.github.com/users/ashb/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ashb/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ashb/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ashb/subscriptions",
+      "organizations_url": "https://api.github.com/users/ashb/orgs",
+      "repos_url": "https://api.github.com/users/ashb/repos",
+      "events_url": "https://api.github.com/users/ashb/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ashb/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "30c442c9b8f4f98774841308a98f0e5ad1bce6a6",
+        "url": "https://api.github.com/repos/apache/airflow/commits/30c442c9b8f4f98774841308a98f0e5ad1bce6a6",
+        "html_url": "https://github.com/apache/airflow/commit/30c442c9b8f4f98774841308a98f0e5ad1bce6a6"
+      }
+    ]
+  },
+  {
+    "sha": "30c442c9b8f4f98774841308a98f0e5ad1bce6a6",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MzBjNDQyYzliOGY0Zjk4Nzc0ODQxMzA4YTk4ZjBlNWFkMWJjZTZhNg==",
+    "commit": {
+      "author": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-22T17:54:03Z"
+      },
+      "committer": {
+        "name": "Jarek Potiuk",
+        "email": "jarek@potiuk.com",
+        "date": "2019-09-22T18:47:44Z"
+      },
+      "message": "[AIRFLOW-5537] Yamllint is not needed as dependency on host\n\nIt used to be needed for pre-commits but is not needed any more\nas it is automatically installed as dependency in the virtualenv\ncreated by pre-commit",
+      "tree": {
+        "sha": "206ea15cd5ca942ebc1ff179bbfe8527695a5e3d",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/206ea15cd5ca942ebc1ff179bbfe8527695a5e3d"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/30c442c9b8f4f98774841308a98f0e5ad1bce6a6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/30c442c9b8f4f98774841308a98f0e5ad1bce6a6",
+    "html_url": "https://github.com/apache/airflow/commit/30c442c9b8f4f98774841308a98f0e5ad1bce6a6",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/30c442c9b8f4f98774841308a98f0e5ad1bce6a6/comments",
+    "author": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f63e4e37d00e52165d7a241626e207e192aae6f2",
+        "url": "https://api.github.com/repos/apache/airflow/commits/f63e4e37d00e52165d7a241626e207e192aae6f2",
+        "html_url": "https://github.com/apache/airflow/commit/f63e4e37d00e52165d7a241626e207e192aae6f2"
+      }
+    ]
+  },
+  {
+    "sha": "f63e4e37d00e52165d7a241626e207e192aae6f2",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6ZjYzZTRlMzdkMDBlNTIxNjVkN2EyNDE2MjZlMjA3ZTE5MmFhZTZmMg==",
+    "commit": {
+      "author": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-22T17:51:54Z"
+      },
+      "committer": {
+        "name": "Jarek Potiuk",
+        "email": "jarek@potiuk.com",
+        "date": "2019-09-22T18:47:44Z"
+      },
+      "message": "[AIRFLOW-5536] Better handling of temporary output files",
+      "tree": {
+        "sha": "eb8255bb74aee142316d14c1bdd388b7fe5e3102",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/eb8255bb74aee142316d14c1bdd388b7fe5e3102"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/f63e4e37d00e52165d7a241626e207e192aae6f2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/f63e4e37d00e52165d7a241626e207e192aae6f2",
+    "html_url": "https://github.com/apache/airflow/commit/f63e4e37d00e52165d7a241626e207e192aae6f2",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/f63e4e37d00e52165d7a241626e207e192aae6f2/comments",
+    "author": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "511615c884a09cd95d1e74a748cc10d6d9e9013d",
+        "url": "https://api.github.com/repos/apache/airflow/commits/511615c884a09cd95d1e74a748cc10d6d9e9013d",
+        "html_url": "https://github.com/apache/airflow/commit/511615c884a09cd95d1e74a748cc10d6d9e9013d"
+      }
+    ]
+  },
+  {
+    "sha": "511615c884a09cd95d1e74a748cc10d6d9e9013d",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6NTExNjE1Yzg4NGEwOWNkOTVkMWU3NGE3NDhjYzEwZDZkOWU5MDEzZA==",
+    "commit": {
+      "author": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-22T17:47:34Z"
+      },
+      "committer": {
+        "name": "Jarek Potiuk",
+        "email": "jarek@potiuk.com",
+        "date": "2019-09-22T18:47:44Z"
+      },
+      "message": "[AIRFLOW-5535] Fix name of VERBOSE parameter",
+      "tree": {
+        "sha": "7c3754ae73437e257668c99cb878e67ffa9cfd59",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/7c3754ae73437e257668c99cb878e67ffa9cfd59"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/511615c884a09cd95d1e74a748cc10d6d9e9013d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/511615c884a09cd95d1e74a748cc10d6d9e9013d",
+    "html_url": "https://github.com/apache/airflow/commit/511615c884a09cd95d1e74a748cc10d6d9e9013d",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/511615c884a09cd95d1e74a748cc10d6d9e9013d/comments",
+    "author": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1815ef32d86ed49d991faddb531d1b8408a11b0d",
+        "url": "https://api.github.com/repos/apache/airflow/commits/1815ef32d86ed49d991faddb531d1b8408a11b0d",
+        "html_url": "https://github.com/apache/airflow/commit/1815ef32d86ed49d991faddb531d1b8408a11b0d"
+      }
+    ]
+  },
+  {
+    "sha": "1815ef32d86ed49d991faddb531d1b8408a11b0d",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MTgxNWVmMzJkODZlZDQ5ZDk5MWZhZGRiNTMxZDFiODQwOGExMWIwZA==",
+    "commit": {
+      "author": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-22T17:45:09Z"
+      },
+      "committer": {
+        "name": "Jarek Potiuk",
+        "email": "jarek@potiuk.com",
+        "date": "2019-09-22T18:47:44Z"
+      },
+      "message": "[AIRFLOW-5533] Fixed failing CRON build\n\nThis change optimises further image building and removes unnecessary\nverbosity in building the images for CI builds.\n\nAfter this change is merged, only the necessary images are built for\neach type of check:\n* Tests -> only CI\n* Static checks (with/without pylint) -> Only CI_SLIM\n* Docs -> only CI_SLIM\n* Licence checks -> Only CHECKLICENCE\n\nPreviously the right images only were built in ci_before_install.sh\nbut then in case of static checks, the pre-commit build image step\nalso rebuilt CHECKLICENCE and CI images - which was not necessary\nand very long in case of CRON job - this caused the CRON job to\nfail at 10m of inactivity.",
+      "tree": {
+        "sha": "b7649b91e4c80228a69ad847113b1a6ebc66b6df",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/b7649b91e4c80228a69ad847113b1a6ebc66b6df"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/1815ef32d86ed49d991faddb531d1b8408a11b0d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/1815ef32d86ed49d991faddb531d1b8408a11b0d",
+    "html_url": "https://github.com/apache/airflow/commit/1815ef32d86ed49d991faddb531d1b8408a11b0d",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/1815ef32d86ed49d991faddb531d1b8408a11b0d/comments",
+    "author": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0ccb9256d7c34b13635f0e12ff19eb80019f69f5",
+        "url": "https://api.github.com/repos/apache/airflow/commits/0ccb9256d7c34b13635f0e12ff19eb80019f69f5",
+        "html_url": "https://github.com/apache/airflow/commit/0ccb9256d7c34b13635f0e12ff19eb80019f69f5"
+      }
+    ]
+  },
+  {
+    "sha": "0ccb9256d7c34b13635f0e12ff19eb80019f69f5",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MGNjYjkyNTZkN2MzNGIxMzYzNWYwZTEyZmYxOWViODAwMTlmNjlmNQ==",
+    "commit": {
+      "author": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-22T17:42:58Z"
+      },
+      "committer": {
+        "name": "Jarek Potiuk",
+        "email": "jarek@potiuk.com",
+        "date": "2019-09-22T18:47:44Z"
+      },
+      "message": "[AIRFLOW-5534] Less verobosity and removal of context container",
+      "tree": {
+        "sha": "da5c7c81b834c54ce87fc8cd96436451ced4bda2",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/da5c7c81b834c54ce87fc8cd96436451ced4bda2"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/0ccb9256d7c34b13635f0e12ff19eb80019f69f5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/0ccb9256d7c34b13635f0e12ff19eb80019f69f5",
+    "html_url": "https://github.com/apache/airflow/commit/0ccb9256d7c34b13635f0e12ff19eb80019f69f5",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/0ccb9256d7c34b13635f0e12ff19eb80019f69f5/comments",
+    "author": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4ed2c222c809e21663272c0c434bd7e69689522a",
+        "url": "https://api.github.com/repos/apache/airflow/commits/4ed2c222c809e21663272c0c434bd7e69689522a",
+        "html_url": "https://github.com/apache/airflow/commit/4ed2c222c809e21663272c0c434bd7e69689522a"
+      }
+    ]
+  },
+  {
+    "sha": "4ed2c222c809e21663272c0c434bd7e69689522a",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6NGVkMmMyMjJjODA5ZTIxNjYzMjcyYzBjNDM0YmQ3ZTY5Njg5NTIyYQ==",
+    "commit": {
+      "author": {
+        "name": "Kamil Breguła",
+        "email": "mik-laj@users.noreply.github.com",
+        "date": "2019-09-22T15:15:29Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2019-09-22T15:15:29Z"
+      },
+      "message": "[AIRFLOW-5435] Add fallback for connection's project id in GKEPodOperator (#6051)\n\n* [AIRFLOW-5435] Add fallback for connection's project id in GKEPodOperator\r\n\r\n* fixup! [AIRFLOW-5435] Add fallback for connection's project id in GKEPodOperator",
+      "tree": {
+        "sha": "34136da43d3e6fad984ecff53d07f42b8b337eed",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/34136da43d3e6fad984ecff53d07f42b8b337eed"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/4ed2c222c809e21663272c0c434bd7e69689522a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdh5ARCRBK7hj4Ov3rIwAAdHIIAKftbX9/UQRDMAHZk8ud3xkn\neum7Md1T0jZJYdtVWOm81tC+Y+1OzBvMpFopWqSXrq869Sx3lfeHSMBKROMIOny1\nKric92l5ElKBRlcuqSWedcVS0idFPkmpIYBYUxCxzy5Wx4SlzTfsNCE9qx+HVLtE\n1hHQSjJJTG2dxCPgQj1ByRDrxXqbmE5hA9dobcHF5ZJ7RdGEZKY7oWwykWa6M56Y\noCttA6OhoSdebKcbB1AAWGWA8jD9zcMwFH79O2Sl5rmVlzVOw+vLkvPQ62hKV/26\nNAdWZcbemz3waLVsT+bjSNrmz2/tOCHhoLUx5kgkt0B2xBNRVSBZDE9NrKNPYMY=\n=EHeK\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 34136da43d3e6fad984ecff53d07f42b8b337eed\nparent 2d19a41208220994d6001833b2830026ee5a357d\nauthor Kamil Breguła <mik-laj@users.noreply.github.com> 1569165329 +0200\ncommitter GitHub <noreply@github.com> 1569165329 +0200\n\n[AIRFLOW-5435] Add fallback for connection's project id in GKEPodOperator (#6051)\n\n* [AIRFLOW-5435] Add fallback for connection's project id in GKEPodOperator\r\n\r\n* fixup! [AIRFLOW-5435] Add fallback for connection's project id in GKEPodOperator\r\n"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/4ed2c222c809e21663272c0c434bd7e69689522a",
+    "html_url": "https://github.com/apache/airflow/commit/4ed2c222c809e21663272c0c434bd7e69689522a",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/4ed2c222c809e21663272c0c434bd7e69689522a/comments",
+    "author": {
+      "login": "mik-laj",
+      "id": 12058428,
+      "node_id": "MDQ6VXNlcjEyMDU4NDI4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12058428?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mik-laj",
+      "html_url": "https://github.com/mik-laj",
+      "followers_url": "https://api.github.com/users/mik-laj/followers",
+      "following_url": "https://api.github.com/users/mik-laj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mik-laj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mik-laj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mik-laj/subscriptions",
+      "organizations_url": "https://api.github.com/users/mik-laj/orgs",
+      "repos_url": "https://api.github.com/users/mik-laj/repos",
+      "events_url": "https://api.github.com/users/mik-laj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mik-laj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2d19a41208220994d6001833b2830026ee5a357d",
+        "url": "https://api.github.com/repos/apache/airflow/commits/2d19a41208220994d6001833b2830026ee5a357d",
+        "html_url": "https://github.com/apache/airflow/commit/2d19a41208220994d6001833b2830026ee5a357d"
+      }
+    ]
+  },
+  {
+    "sha": "2d19a41208220994d6001833b2830026ee5a357d",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MmQxOWE0MTIwODIyMDk5NGQ2MDAxODMzYjI4MzAwMjZlZTVhMzU3ZA==",
+    "commit": {
+      "author": {
+        "name": "Peng Hou",
+        "email": "peng@loadsmart.com",
+        "date": "2019-09-22T09:11:38Z"
+      },
+      "committer": {
+        "name": "Kamil Breguła",
+        "email": "mik-laj@users.noreply.github.com",
+        "date": "2019-09-22T09:11:38Z"
+      },
+      "message": "[AIRFLOW-3388] Add support to Array Jobs for AWS Batch Operator (#6153)",
+      "tree": {
+        "sha": "027bf6621a2ddbdc50c6cbf93d3c2700fc435006",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/027bf6621a2ddbdc50c6cbf93d3c2700fc435006"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/2d19a41208220994d6001833b2830026ee5a357d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/2d19a41208220994d6001833b2830026ee5a357d",
+    "html_url": "https://github.com/apache/airflow/commit/2d19a41208220994d6001833b2830026ee5a357d",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/2d19a41208220994d6001833b2830026ee5a357d/comments",
+    "author": {
+      "login": "penghou620",
+      "id": 1701213,
+      "node_id": "MDQ6VXNlcjE3MDEyMTM=",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1701213?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/penghou620",
+      "html_url": "https://github.com/penghou620",
+      "followers_url": "https://api.github.com/users/penghou620/followers",
+      "following_url": "https://api.github.com/users/penghou620/following{/other_user}",
+      "gists_url": "https://api.github.com/users/penghou620/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/penghou620/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/penghou620/subscriptions",
+      "organizations_url": "https://api.github.com/users/penghou620/orgs",
+      "repos_url": "https://api.github.com/users/penghou620/repos",
+      "events_url": "https://api.github.com/users/penghou620/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/penghou620/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mik-laj",
+      "id": 12058428,
+      "node_id": "MDQ6VXNlcjEyMDU4NDI4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12058428?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mik-laj",
+      "html_url": "https://github.com/mik-laj",
+      "followers_url": "https://api.github.com/users/mik-laj/followers",
+      "following_url": "https://api.github.com/users/mik-laj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mik-laj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mik-laj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mik-laj/subscriptions",
+      "organizations_url": "https://api.github.com/users/mik-laj/orgs",
+      "repos_url": "https://api.github.com/users/mik-laj/repos",
+      "events_url": "https://api.github.com/users/mik-laj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mik-laj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ccf44086c55b27325bfdd9e76ad1698f70d35cde",
+        "url": "https://api.github.com/repos/apache/airflow/commits/ccf44086c55b27325bfdd9e76ad1698f70d35cde",
+        "html_url": "https://github.com/apache/airflow/commit/ccf44086c55b27325bfdd9e76ad1698f70d35cde"
+      }
+    ]
+  },
+  {
+    "sha": "ccf44086c55b27325bfdd9e76ad1698f70d35cde",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6Y2NmNDQwODZjNTViMjczMjViZmRkOWU3NmFkMTY5OGY3MGQzNWNkZQ==",
+    "commit": {
+      "author": {
+        "name": "Kaxil Naik",
+        "email": "kaxilnaik@gmail.com",
+        "date": "2019-09-22T07:55:39Z"
+      },
+      "committer": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-22T07:55:39Z"
+      },
+      "message": "[AIRFLOW-5531] Replace deprecated log.warn() with log.warning() (#6165)\n\n- Add pre-commit hook to detect this",
+      "tree": {
+        "sha": "de54aefb9deabbb8f1458c54b030dd9df0c4b349",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/de54aefb9deabbb8f1458c54b030dd9df0c4b349"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/ccf44086c55b27325bfdd9e76ad1698f70d35cde",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/ccf44086c55b27325bfdd9e76ad1698f70d35cde",
+    "html_url": "https://github.com/apache/airflow/commit/ccf44086c55b27325bfdd9e76ad1698f70d35cde",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/ccf44086c55b27325bfdd9e76ad1698f70d35cde/comments",
+    "author": {
+      "login": "kaxil",
+      "id": 8811558,
+      "node_id": "MDQ6VXNlcjg4MTE1NTg=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8811558?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kaxil",
+      "html_url": "https://github.com/kaxil",
+      "followers_url": "https://api.github.com/users/kaxil/followers",
+      "following_url": "https://api.github.com/users/kaxil/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kaxil/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kaxil/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kaxil/subscriptions",
+      "organizations_url": "https://api.github.com/users/kaxil/orgs",
+      "repos_url": "https://api.github.com/users/kaxil/repos",
+      "events_url": "https://api.github.com/users/kaxil/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kaxil/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "31e7d319ea0d77fb639ba4ed1c46197f853552a0",
+        "url": "https://api.github.com/repos/apache/airflow/commits/31e7d319ea0d77fb639ba4ed1c46197f853552a0",
+        "html_url": "https://github.com/apache/airflow/commit/31e7d319ea0d77fb639ba4ed1c46197f853552a0"
+      }
+    ]
+  },
+  {
+    "sha": "31e7d319ea0d77fb639ba4ed1c46197f853552a0",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MzFlN2QzMTllYTBkNzdmYjYzOWJhNGVkMWM0NjE5N2Y4NTM1NTJhMA==",
+    "commit": {
+      "author": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-21T20:19:30Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2019-09-21T20:19:30Z"
+      },
+      "message": "[AIRFLOW-XXX] fix backticks in new file (#6164)",
+      "tree": {
+        "sha": "0787b31b5dedfcce4ffd7200caed8e8bd1cd9f4b",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/0787b31b5dedfcce4ffd7200caed8e8bd1cd9f4b"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/31e7d319ea0d77fb639ba4ed1c46197f853552a0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdhoXSCRBK7hj4Ov3rIwAAdHIIAJoXVhEq7Oj5gNUc4T6DLQL7\nOsynRbclAbrmFm7/K0Izj6aWrLxXzPdmi3lCW+gqh4C045m4qvTfaCj2vGOElFo1\nOWyunzhHkaGv18Z0mZ1JXAHrlkCa4snTPgagvIumn9fTZxsifU9XN1KnOe8Drv3Z\ni2UFfCrBe3h9rOZEpDzkBFolk9QkQLf02z5q4M4U35WILaYdrfQAa40qw7uGB0qz\n7fKlHFWMWxPA5th61UNqqfVyXMOOsnkNSFHAElF3WbT/pcrZZAquCWibT2NmTkAa\noE3CFfbE4VxNo9ZKHd6pEKtk+O+hV7L65qnJBW0l7vXbkEeyg03sw/kSYlrKIcU=\n=7Ud3\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0787b31b5dedfcce4ffd7200caed8e8bd1cd9f4b\nparent 86b4caac9a1421500ba7eeb10a147b0f731bab08\nauthor Jarek Potiuk <jarek.potiuk@polidea.com> 1569097170 +0100\ncommitter GitHub <noreply@github.com> 1569097170 +0100\n\n[AIRFLOW-XXX] fix backticks in new file (#6164)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/31e7d319ea0d77fb639ba4ed1c46197f853552a0",
+    "html_url": "https://github.com/apache/airflow/commit/31e7d319ea0d77fb639ba4ed1c46197f853552a0",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/31e7d319ea0d77fb639ba4ed1c46197f853552a0/comments",
+    "author": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "86b4caac9a1421500ba7eeb10a147b0f731bab08",
+        "url": "https://api.github.com/repos/apache/airflow/commits/86b4caac9a1421500ba7eeb10a147b0f731bab08",
+        "html_url": "https://github.com/apache/airflow/commit/86b4caac9a1421500ba7eeb10a147b0f731bab08"
+      }
+    ]
+  },
+  {
+    "sha": "86b4caac9a1421500ba7eeb10a147b0f731bab08",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6ODZiNGNhYWM5YTE0MjE1MDBiYTdlZWIxMGExNDdiMGY3MzFiYWIwOA==",
+    "commit": {
+      "author": {
+        "name": "Kamil Breguła",
+        "email": "mik-laj@users.noreply.github.com",
+        "date": "2019-09-21T20:06:19Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2019-09-21T20:06:19Z"
+      },
+      "message": "[AIRFLOW-5434] Use hook to provide credentials in GKEPodOperator (#6050)",
+      "tree": {
+        "sha": "24cd55a3b97872862563d03798dc02101c0e7ed1",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/24cd55a3b97872862563d03798dc02101c0e7ed1"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/86b4caac9a1421500ba7eeb10a147b0f731bab08",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdhoK7CRBK7hj4Ov3rIwAAdHIIACd7oo17kSklPcOx2MMUKHI6\nQ0S8CHiOD34qiGMS0H1eVMniu1gVucPJ3u3y5dW5v8XVzbGWDRo+HLlUExWGQBIm\nkz31h717W9LU4wmZ0OgCIm83LOoGo7wk1JGryEuZnIRZWka7VsReVIERpFrwRgP6\nq4hJAz+SOfyEY5ubAJ7oXh4pKb7pMhTkLE2jYlwjjVfGDwaF26Fn25mRtvxRkm2k\nI/5vaESOSNQzpWE5uhHVo4RYFKut1AgKmXeU6Gzrpun+2BojqryWov78AKOstUzo\ntv+tQhkRGCF2SSCatYtSjS+T1ZWb8OQr1WNMFLrCcFEJc1ZTv3p9aGlCFbgxHfE=\n=9R2X\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 24cd55a3b97872862563d03798dc02101c0e7ed1\nparent cfd8d605d9e29d06ff7066bded6c5d2c479d202e\nauthor Kamil Breguła <mik-laj@users.noreply.github.com> 1569096379 +0200\ncommitter GitHub <noreply@github.com> 1569096379 +0200\n\n[AIRFLOW-5434] Use hook to provide credentials in GKEPodOperator (#6050)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/86b4caac9a1421500ba7eeb10a147b0f731bab08",
+    "html_url": "https://github.com/apache/airflow/commit/86b4caac9a1421500ba7eeb10a147b0f731bab08",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/86b4caac9a1421500ba7eeb10a147b0f731bab08/comments",
+    "author": {
+      "login": "mik-laj",
+      "id": 12058428,
+      "node_id": "MDQ6VXNlcjEyMDU4NDI4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12058428?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mik-laj",
+      "html_url": "https://github.com/mik-laj",
+      "followers_url": "https://api.github.com/users/mik-laj/followers",
+      "following_url": "https://api.github.com/users/mik-laj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mik-laj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mik-laj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mik-laj/subscriptions",
+      "organizations_url": "https://api.github.com/users/mik-laj/orgs",
+      "repos_url": "https://api.github.com/users/mik-laj/repos",
+      "events_url": "https://api.github.com/users/mik-laj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mik-laj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cfd8d605d9e29d06ff7066bded6c5d2c479d202e",
+        "url": "https://api.github.com/repos/apache/airflow/commits/cfd8d605d9e29d06ff7066bded6c5d2c479d202e",
+        "html_url": "https://github.com/apache/airflow/commit/cfd8d605d9e29d06ff7066bded6c5d2c479d202e"
+      }
+    ]
+  },
+  {
+    "sha": "cfd8d605d9e29d06ff7066bded6c5d2c479d202e",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6Y2ZkOGQ2MDVkOWUyOWQwNmZmNzA2NmJkZWQ2YzVkMmM0NzlkMjAyZQ==",
+    "commit": {
+      "author": {
+        "name": "Kaxil Naik",
+        "email": "kaxilnaik@gmail.com",
+        "date": "2019-09-21T19:47:02Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2019-09-21T19:47:02Z"
+      },
+      "message": "[AIRFLOW-XXX] Fix backtick issues in .rst files & Add Precommit hook (#6162)",
+      "tree": {
+        "sha": "5d5aa3128e603814689cd0183a5c4f04fa09b62c",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/5d5aa3128e603814689cd0183a5c4f04fa09b62c"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/cfd8d605d9e29d06ff7066bded6c5d2c479d202e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdhn42CRBK7hj4Ov3rIwAAdHIIAIEuGfRiVIFXpq6X/d2Mm9iZ\nMizSX5cb2f3d8fNC+9pHg2uDvLmcKNH0KcB7woyKa02kZpTX5cSMlard9VnguADe\naDf0cW4SWml1YWbI2OldQtsiH9ZVp7V+0WPdzcatUCoHa8V/ARgjD7VmnWTNYz7v\nz9q161zPJXozfAQcVnF7EStPqGOzXwRlzmpEHCA4jerWs6ZXGf+V/Pyq4XGSu66R\n8szTgwC5CuML/ehLPIbn1UYc8p42W7YuF/bBmpX76w0lX3H3EWDCQ9hCipEbPVyB\nFsuHu6X+4sJ/0rDHGyfj9yKWT36oDkoYbF+KlaGYd/T4ljbUx5kwsdn5bft2Y5M=\n=1RN/\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5d5aa3128e603814689cd0183a5c4f04fa09b62c\nparent 123479cd6ad877e295a25367613534be7f7aec3b\nauthor Kaxil Naik <kaxilnaik@gmail.com> 1569095222 +0100\ncommitter GitHub <noreply@github.com> 1569095222 +0100\n\n[AIRFLOW-XXX] Fix backtick issues in .rst files & Add Precommit hook (#6162)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/cfd8d605d9e29d06ff7066bded6c5d2c479d202e",
+    "html_url": "https://github.com/apache/airflow/commit/cfd8d605d9e29d06ff7066bded6c5d2c479d202e",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/cfd8d605d9e29d06ff7066bded6c5d2c479d202e/comments",
+    "author": {
+      "login": "kaxil",
+      "id": 8811558,
+      "node_id": "MDQ6VXNlcjg4MTE1NTg=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8811558?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kaxil",
+      "html_url": "https://github.com/kaxil",
+      "followers_url": "https://api.github.com/users/kaxil/followers",
+      "following_url": "https://api.github.com/users/kaxil/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kaxil/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kaxil/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kaxil/subscriptions",
+      "organizations_url": "https://api.github.com/users/kaxil/orgs",
+      "repos_url": "https://api.github.com/users/kaxil/repos",
+      "events_url": "https://api.github.com/users/kaxil/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kaxil/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "123479cd6ad877e295a25367613534be7f7aec3b",
+        "url": "https://api.github.com/repos/apache/airflow/commits/123479cd6ad877e295a25367613534be7f7aec3b",
+        "html_url": "https://github.com/apache/airflow/commit/123479cd6ad877e295a25367613534be7f7aec3b"
+      }
+    ]
+  },
+  {
+    "sha": "123479cd6ad877e295a25367613534be7f7aec3b",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MTIzNDc5Y2Q2YWQ4NzdlMjk1YTI1MzY3NjEzNTM0YmU3ZjdhZWMzYg==",
+    "commit": {
+      "author": {
+        "name": "Fabrizio Milo",
+        "email": "mistobaan@users.noreply.github.com",
+        "date": "2019-09-21T19:22:43Z"
+      },
+      "committer": {
+        "name": "Kamil Breguła",
+        "email": "mik-laj@users.noreply.github.com",
+        "date": "2019-09-21T19:22:43Z"
+      },
+      "message": "[AIRFLOW-5530] Fiix typo in AWS SQS sensors (#6012)",
+      "tree": {
+        "sha": "65d726ea463bd44eb107f44014ff96d678723ab8",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/65d726ea463bd44eb107f44014ff96d678723ab8"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/123479cd6ad877e295a25367613534be7f7aec3b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/123479cd6ad877e295a25367613534be7f7aec3b",
+    "html_url": "https://github.com/apache/airflow/commit/123479cd6ad877e295a25367613534be7f7aec3b",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/123479cd6ad877e295a25367613534be7f7aec3b/comments",
+    "author": {
+      "login": "Mistobaan",
+      "id": 112599,
+      "node_id": "MDQ6VXNlcjExMjU5OQ==",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/112599?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mistobaan",
+      "html_url": "https://github.com/Mistobaan",
+      "followers_url": "https://api.github.com/users/Mistobaan/followers",
+      "following_url": "https://api.github.com/users/Mistobaan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Mistobaan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Mistobaan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Mistobaan/subscriptions",
+      "organizations_url": "https://api.github.com/users/Mistobaan/orgs",
+      "repos_url": "https://api.github.com/users/Mistobaan/repos",
+      "events_url": "https://api.github.com/users/Mistobaan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Mistobaan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mik-laj",
+      "id": 12058428,
+      "node_id": "MDQ6VXNlcjEyMDU4NDI4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12058428?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mik-laj",
+      "html_url": "https://github.com/mik-laj",
+      "followers_url": "https://api.github.com/users/mik-laj/followers",
+      "following_url": "https://api.github.com/users/mik-laj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mik-laj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mik-laj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mik-laj/subscriptions",
+      "organizations_url": "https://api.github.com/users/mik-laj/orgs",
+      "repos_url": "https://api.github.com/users/mik-laj/repos",
+      "events_url": "https://api.github.com/users/mik-laj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mik-laj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8f04ebe66964f008b39fc6767a09914820801c59",
+        "url": "https://api.github.com/repos/apache/airflow/commits/8f04ebe66964f008b39fc6767a09914820801c59",
+        "html_url": "https://github.com/apache/airflow/commit/8f04ebe66964f008b39fc6767a09914820801c59"
+      }
+    ]
+  },
+  {
+    "sha": "8f04ebe66964f008b39fc6767a09914820801c59",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6OGYwNGViZTY2OTY0ZjAwOGIzOWZjNjc2N2EwOTkxNDgyMDgwMWM1OQ==",
+    "commit": {
+      "author": {
+        "name": "Tomek",
+        "email": "tomasz.urbaszek@polidea.com",
+        "date": "2019-09-21T18:59:36Z"
+      },
+      "committer": {
+        "name": "Kamil Breguła",
+        "email": "mik-laj@users.noreply.github.com",
+        "date": "2019-09-21T18:59:36Z"
+      },
+      "message": "[AIRFLOW-5499] Move GCP utils to core (#6122)",
+      "tree": {
+        "sha": "53f1fc3b38cea10ba44fca23ab5e8dc373aa4277",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/53f1fc3b38cea10ba44fca23ab5e8dc373aa4277"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/8f04ebe66964f008b39fc6767a09914820801c59",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/8f04ebe66964f008b39fc6767a09914820801c59",
+    "html_url": "https://github.com/apache/airflow/commit/8f04ebe66964f008b39fc6767a09914820801c59",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/8f04ebe66964f008b39fc6767a09914820801c59/comments",
+    "author": {
+      "login": "nuclearpinguin",
+      "id": 9528307,
+      "node_id": "MDQ6VXNlcjk1MjgzMDc=",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9528307?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nuclearpinguin",
+      "html_url": "https://github.com/nuclearpinguin",
+      "followers_url": "https://api.github.com/users/nuclearpinguin/followers",
+      "following_url": "https://api.github.com/users/nuclearpinguin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nuclearpinguin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nuclearpinguin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nuclearpinguin/subscriptions",
+      "organizations_url": "https://api.github.com/users/nuclearpinguin/orgs",
+      "repos_url": "https://api.github.com/users/nuclearpinguin/repos",
+      "events_url": "https://api.github.com/users/nuclearpinguin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nuclearpinguin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mik-laj",
+      "id": 12058428,
+      "node_id": "MDQ6VXNlcjEyMDU4NDI4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12058428?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mik-laj",
+      "html_url": "https://github.com/mik-laj",
+      "followers_url": "https://api.github.com/users/mik-laj/followers",
+      "following_url": "https://api.github.com/users/mik-laj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mik-laj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mik-laj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mik-laj/subscriptions",
+      "organizations_url": "https://api.github.com/users/mik-laj/orgs",
+      "repos_url": "https://api.github.com/users/mik-laj/repos",
+      "events_url": "https://api.github.com/users/mik-laj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mik-laj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "38ebc425fc8385e1493d1bdf7151affa16c844e2",
+        "url": "https://api.github.com/repos/apache/airflow/commits/38ebc425fc8385e1493d1bdf7151affa16c844e2",
+        "html_url": "https://github.com/apache/airflow/commit/38ebc425fc8385e1493d1bdf7151affa16c844e2"
+      }
+    ]
+  },
+  {
+    "sha": "38ebc425fc8385e1493d1bdf7151affa16c844e2",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MzhlYmM0MjVmYzgzODVlMTQ5M2QxYmRmNzE1MWFmZmExNmM4NDRlMg==",
+    "commit": {
+      "author": {
+        "name": "Kamil Breguła",
+        "email": "mik-laj@users.noreply.github.com",
+        "date": "2019-09-21T18:58:14Z"
+      },
+      "committer": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-21T18:58:13Z"
+      },
+      "message": "[AIRFLOW-XXX] Add a third way to configure authorization (#6134)",
+      "tree": {
+        "sha": "562c1b7d32a55e959b99f5b4b4c9814d8fd3f6ff",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/562c1b7d32a55e959b99f5b4b4c9814d8fd3f6ff"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/38ebc425fc8385e1493d1bdf7151affa16c844e2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/38ebc425fc8385e1493d1bdf7151affa16c844e2",
+    "html_url": "https://github.com/apache/airflow/commit/38ebc425fc8385e1493d1bdf7151affa16c844e2",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/38ebc425fc8385e1493d1bdf7151affa16c844e2/comments",
+    "author": {
+      "login": "mik-laj",
+      "id": 12058428,
+      "node_id": "MDQ6VXNlcjEyMDU4NDI4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12058428?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mik-laj",
+      "html_url": "https://github.com/mik-laj",
+      "followers_url": "https://api.github.com/users/mik-laj/followers",
+      "following_url": "https://api.github.com/users/mik-laj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mik-laj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mik-laj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mik-laj/subscriptions",
+      "organizations_url": "https://api.github.com/users/mik-laj/orgs",
+      "repos_url": "https://api.github.com/users/mik-laj/repos",
+      "events_url": "https://api.github.com/users/mik-laj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mik-laj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b31773cff98241572819fea83a25e2edd58078be",
+        "url": "https://api.github.com/repos/apache/airflow/commits/b31773cff98241572819fea83a25e2edd58078be",
+        "html_url": "https://github.com/apache/airflow/commit/b31773cff98241572819fea83a25e2edd58078be"
+      }
+    ]
+  },
+  {
+    "sha": "b31773cff98241572819fea83a25e2edd58078be",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6YjMxNzczY2ZmOTgyNDE1NzI4MTlmZWE4M2EyNWUyZWRkNTgwNzhiZQ==",
+    "commit": {
+      "author": {
+        "name": "TobKed",
+        "email": "tobiasz.kedzierski@polidea.com",
+        "date": "2019-09-21T18:55:42Z"
+      },
+      "committer": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-21T18:55:42Z"
+      },
+      "message": "[AIRFLOW-5526] Update docs configuration due to migration of GCP docs (#6154)\n\n* [AIRFLOW-5526] Update docs configuration due to migration of GCP docs",
+      "tree": {
+        "sha": "c529b07218d908004459e7337feb9870ac2ead65",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/c529b07218d908004459e7337feb9870ac2ead65"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/b31773cff98241572819fea83a25e2edd58078be",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/b31773cff98241572819fea83a25e2edd58078be",
+    "html_url": "https://github.com/apache/airflow/commit/b31773cff98241572819fea83a25e2edd58078be",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/b31773cff98241572819fea83a25e2edd58078be/comments",
+    "author": {
+      "login": "TobKed",
+      "id": 32594847,
+      "node_id": "MDQ6VXNlcjMyNTk0ODQ3",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/32594847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TobKed",
+      "html_url": "https://github.com/TobKed",
+      "followers_url": "https://api.github.com/users/TobKed/followers",
+      "following_url": "https://api.github.com/users/TobKed/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TobKed/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TobKed/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TobKed/subscriptions",
+      "organizations_url": "https://api.github.com/users/TobKed/orgs",
+      "repos_url": "https://api.github.com/users/TobKed/repos",
+      "events_url": "https://api.github.com/users/TobKed/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TobKed/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0a505b613650efd1cdd7590443db8b9d52de4c88",
+        "url": "https://api.github.com/repos/apache/airflow/commits/0a505b613650efd1cdd7590443db8b9d52de4c88",
+        "html_url": "https://github.com/apache/airflow/commit/0a505b613650efd1cdd7590443db8b9d52de4c88"
+      }
+    ]
+  },
+  {
+    "sha": "0a505b613650efd1cdd7590443db8b9d52de4c88",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MGE1MDViNjEzNjUwZWZkMWNkZDc1OTA0NDNkYjhiOWQ1MmRlNGM4OA==",
+    "commit": {
+      "author": {
+        "name": "Hao Liang",
+        "email": "leonhao2014@outlook.com",
+        "date": "2019-09-21T04:56:02Z"
+      },
+      "committer": {
+        "name": "Xiaodong",
+        "email": "xd_deng@hotmail.com",
+        "date": "2019-09-21T04:56:02Z"
+      },
+      "message": "[AIRFLOW-XXX] Fix typo and format error (#6149)",
+      "tree": {
+        "sha": "da0f72a43be64d98c2226e607976cb1c7040b0f0",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/da0f72a43be64d98c2226e607976cb1c7040b0f0"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/0a505b613650efd1cdd7590443db8b9d52de4c88",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/0a505b613650efd1cdd7590443db8b9d52de4c88",
+    "html_url": "https://github.com/apache/airflow/commit/0a505b613650efd1cdd7590443db8b9d52de4c88",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/0a505b613650efd1cdd7590443db8b9d52de4c88/comments",
+    "author": {
+      "login": "haoliang7",
+      "id": 52027443,
+      "node_id": "MDQ6VXNlcjUyMDI3NDQz",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/52027443?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/haoliang7",
+      "html_url": "https://github.com/haoliang7",
+      "followers_url": "https://api.github.com/users/haoliang7/followers",
+      "following_url": "https://api.github.com/users/haoliang7/following{/other_user}",
+      "gists_url": "https://api.github.com/users/haoliang7/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/haoliang7/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/haoliang7/subscriptions",
+      "organizations_url": "https://api.github.com/users/haoliang7/orgs",
+      "repos_url": "https://api.github.com/users/haoliang7/repos",
+      "events_url": "https://api.github.com/users/haoliang7/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/haoliang7/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "XD-DENG",
+      "id": 11539188,
+      "node_id": "MDQ6VXNlcjExNTM5MTg4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/11539188?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/XD-DENG",
+      "html_url": "https://github.com/XD-DENG",
+      "followers_url": "https://api.github.com/users/XD-DENG/followers",
+      "following_url": "https://api.github.com/users/XD-DENG/following{/other_user}",
+      "gists_url": "https://api.github.com/users/XD-DENG/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/XD-DENG/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/XD-DENG/subscriptions",
+      "organizations_url": "https://api.github.com/users/XD-DENG/orgs",
+      "repos_url": "https://api.github.com/users/XD-DENG/repos",
+      "events_url": "https://api.github.com/users/XD-DENG/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/XD-DENG/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2d668ca9f280946cb1800af4ec99ad6727c8e363",
+        "url": "https://api.github.com/repos/apache/airflow/commits/2d668ca9f280946cb1800af4ec99ad6727c8e363",
+        "html_url": "https://github.com/apache/airflow/commit/2d668ca9f280946cb1800af4ec99ad6727c8e363"
+      }
+    ]
+  },
+  {
+    "sha": "2d668ca9f280946cb1800af4ec99ad6727c8e363",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MmQ2NjhjYTlmMjgwOTQ2Y2IxODAwYWY0ZWM5OWFkNjcyN2M4ZTM2Mw==",
+    "commit": {
+      "author": {
+        "name": "Kaxil Naik",
+        "email": "kaxilnaik@gmail.com",
+        "date": "2019-09-21T03:41:00Z"
+      },
+      "committer": {
+        "name": "Xiaodong",
+        "email": "xd_deng@hotmail.com",
+        "date": "2019-09-21T03:41:00Z"
+      },
+      "message": "[AIRFLOW-XXX] Fix Prerequisites link in BREEZE.rst (#6160)",
+      "tree": {
+        "sha": "ec04cce86b9f9686deb391d3037b659942e757de",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/ec04cce86b9f9686deb391d3037b659942e757de"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/2d668ca9f280946cb1800af4ec99ad6727c8e363",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/2d668ca9f280946cb1800af4ec99ad6727c8e363",
+    "html_url": "https://github.com/apache/airflow/commit/2d668ca9f280946cb1800af4ec99ad6727c8e363",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/2d668ca9f280946cb1800af4ec99ad6727c8e363/comments",
+    "author": {
+      "login": "kaxil",
+      "id": 8811558,
+      "node_id": "MDQ6VXNlcjg4MTE1NTg=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8811558?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kaxil",
+      "html_url": "https://github.com/kaxil",
+      "followers_url": "https://api.github.com/users/kaxil/followers",
+      "following_url": "https://api.github.com/users/kaxil/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kaxil/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kaxil/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kaxil/subscriptions",
+      "organizations_url": "https://api.github.com/users/kaxil/orgs",
+      "repos_url": "https://api.github.com/users/kaxil/repos",
+      "events_url": "https://api.github.com/users/kaxil/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kaxil/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "XD-DENG",
+      "id": 11539188,
+      "node_id": "MDQ6VXNlcjExNTM5MTg4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/11539188?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/XD-DENG",
+      "html_url": "https://github.com/XD-DENG",
+      "followers_url": "https://api.github.com/users/XD-DENG/followers",
+      "following_url": "https://api.github.com/users/XD-DENG/following{/other_user}",
+      "gists_url": "https://api.github.com/users/XD-DENG/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/XD-DENG/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/XD-DENG/subscriptions",
+      "organizations_url": "https://api.github.com/users/XD-DENG/orgs",
+      "repos_url": "https://api.github.com/users/XD-DENG/repos",
+      "events_url": "https://api.github.com/users/XD-DENG/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/XD-DENG/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e68d92f0899efa6b99bd1f89325e8a10fbbc8c63",
+        "url": "https://api.github.com/repos/apache/airflow/commits/e68d92f0899efa6b99bd1f89325e8a10fbbc8c63",
+        "html_url": "https://github.com/apache/airflow/commit/e68d92f0899efa6b99bd1f89325e8a10fbbc8c63"
+      }
+    ]
+  },
+  {
+    "sha": "e68d92f0899efa6b99bd1f89325e8a10fbbc8c63",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6ZTY4ZDkyZjA4OTllZmE2Yjk5YmQxZjg5MzI1ZThhMTBmYmJjOGM2Mw==",
+    "commit": {
+      "author": {
+        "name": "Kaxil Naik",
+        "email": "kaxilnaik@gmail.com",
+        "date": "2019-09-21T03:38:32Z"
+      },
+      "committer": {
+        "name": "Xiaodong",
+        "email": "xd_deng@hotmail.com",
+        "date": "2019-09-21T03:38:32Z"
+      },
+      "message": "[AIRFLOW-XXX] Fix incorrect backticks in BREEZE.rst (#6161)",
+      "tree": {
+        "sha": "da8515b22e77153541a1d7b83642b0f5a757bcc3",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/da8515b22e77153541a1d7b83642b0f5a757bcc3"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/e68d92f0899efa6b99bd1f89325e8a10fbbc8c63",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/e68d92f0899efa6b99bd1f89325e8a10fbbc8c63",
+    "html_url": "https://github.com/apache/airflow/commit/e68d92f0899efa6b99bd1f89325e8a10fbbc8c63",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/e68d92f0899efa6b99bd1f89325e8a10fbbc8c63/comments",
+    "author": {
+      "login": "kaxil",
+      "id": 8811558,
+      "node_id": "MDQ6VXNlcjg4MTE1NTg=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8811558?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kaxil",
+      "html_url": "https://github.com/kaxil",
+      "followers_url": "https://api.github.com/users/kaxil/followers",
+      "following_url": "https://api.github.com/users/kaxil/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kaxil/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kaxil/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kaxil/subscriptions",
+      "organizations_url": "https://api.github.com/users/kaxil/orgs",
+      "repos_url": "https://api.github.com/users/kaxil/repos",
+      "events_url": "https://api.github.com/users/kaxil/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kaxil/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "XD-DENG",
+      "id": 11539188,
+      "node_id": "MDQ6VXNlcjExNTM5MTg4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/11539188?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/XD-DENG",
+      "html_url": "https://github.com/XD-DENG",
+      "followers_url": "https://api.github.com/users/XD-DENG/followers",
+      "following_url": "https://api.github.com/users/XD-DENG/following{/other_user}",
+      "gists_url": "https://api.github.com/users/XD-DENG/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/XD-DENG/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/XD-DENG/subscriptions",
+      "organizations_url": "https://api.github.com/users/XD-DENG/orgs",
+      "repos_url": "https://api.github.com/users/XD-DENG/repos",
+      "events_url": "https://api.github.com/users/XD-DENG/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/XD-DENG/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "155adf4242900ac0eb6a2d69f59beb215324177e",
+        "url": "https://api.github.com/repos/apache/airflow/commits/155adf4242900ac0eb6a2d69f59beb215324177e",
+        "html_url": "https://github.com/apache/airflow/commit/155adf4242900ac0eb6a2d69f59beb215324177e"
+      }
+    ]
+  },
+  {
+    "sha": "155adf4242900ac0eb6a2d69f59beb215324177e",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MTU1YWRmNDI0MjkwMGFjMGViNmEyZDY5ZjU5YmViMjE1MzI0MTc3ZQ==",
+    "commit": {
+      "author": {
+        "name": "Ping Zhang",
+        "email": "pingzh@umich.edu",
+        "date": "2019-09-20T23:48:58Z"
+      },
+      "committer": {
+        "name": "Kevin Yang",
+        "email": "yrqls21@gmail.com",
+        "date": "2019-09-20T23:48:58Z"
+      },
+      "message": "[AIRFLOW-5528] end_of_log_mark should not be a log record (#6159)",
+      "tree": {
+        "sha": "d448b73fb98cecac80381facadc1197017a347e3",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/d448b73fb98cecac80381facadc1197017a347e3"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/155adf4242900ac0eb6a2d69f59beb215324177e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/155adf4242900ac0eb6a2d69f59beb215324177e",
+    "html_url": "https://github.com/apache/airflow/commit/155adf4242900ac0eb6a2d69f59beb215324177e",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/155adf4242900ac0eb6a2d69f59beb215324177e/comments",
+    "author": {
+      "login": "pingzh",
+      "id": 8662365,
+      "node_id": "MDQ6VXNlcjg2NjIzNjU=",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8662365?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pingzh",
+      "html_url": "https://github.com/pingzh",
+      "followers_url": "https://api.github.com/users/pingzh/followers",
+      "following_url": "https://api.github.com/users/pingzh/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pingzh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pingzh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pingzh/subscriptions",
+      "organizations_url": "https://api.github.com/users/pingzh/orgs",
+      "repos_url": "https://api.github.com/users/pingzh/repos",
+      "events_url": "https://api.github.com/users/pingzh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pingzh/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "KevinYang21",
+      "id": 7818710,
+      "node_id": "MDQ6VXNlcjc4MTg3MTA=",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7818710?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/KevinYang21",
+      "html_url": "https://github.com/KevinYang21",
+      "followers_url": "https://api.github.com/users/KevinYang21/followers",
+      "following_url": "https://api.github.com/users/KevinYang21/following{/other_user}",
+      "gists_url": "https://api.github.com/users/KevinYang21/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/KevinYang21/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/KevinYang21/subscriptions",
+      "organizations_url": "https://api.github.com/users/KevinYang21/orgs",
+      "repos_url": "https://api.github.com/users/KevinYang21/repos",
+      "events_url": "https://api.github.com/users/KevinYang21/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/KevinYang21/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "04da038100786da179f977df4eb2bab5352949d9",
+        "url": "https://api.github.com/repos/apache/airflow/commits/04da038100786da179f977df4eb2bab5352949d9",
+        "html_url": "https://github.com/apache/airflow/commit/04da038100786da179f977df4eb2bab5352949d9"
+      }
+    ]
+  },
+  {
+    "sha": "04da038100786da179f977df4eb2bab5352949d9",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6MDRkYTAzODEwMDc4NmRhMTc5Zjk3N2RmNGViMmJhYjUzNTI5NDlkOQ==",
+    "commit": {
+      "author": {
+        "name": "Jarek Potiuk",
+        "email": "jarek.potiuk@polidea.com",
+        "date": "2019-09-20T15:59:54Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2019-09-20T15:59:54Z"
+      },
+      "message": "[AIRFLOW-XXX] Update documentation about variables forcing answer (#6158)",
+      "tree": {
+        "sha": "86a296779304e9d3076c2d8d03b08edd5a6d80b3",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/86a296779304e9d3076c2d8d03b08edd5a6d80b3"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/04da038100786da179f977df4eb2bab5352949d9",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdhPd6CRBK7hj4Ov3rIwAAdHIIAD9XILSa5kFMoq64NJPA9TRw\nh6xYM4TQqooTRrUPMovvzGs6AbPCLQeIzsWml+Ul6QqDfAT6IgtNOF5bekUmUXIV\nvK+aQSBm8Hae7tsPZg4KkJxwNme2NY1t5PZdwEz4ehxaWB4zC1cbNvsTM1yUQ6Sq\naURbtMwwjojeO87GMVPyw99mKUs9ZKvvuefQtmja1D0oAxnS1lauxxyIiu+tKpi8\nivJsgFQIW4QU7D2tWBHjtmuMJUT49K8VNoUSL7yfQKCASmjx1cXYpPSPf5GRE7Ej\nJ8R2CXXd6l5oKlcHGJe4uB8U/wAhZIg7P3ZGaldOVhYreTzfDBz6EUB6T68NcrE=\n=vo1Y\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 86a296779304e9d3076c2d8d03b08edd5a6d80b3\nparent 7e4330cce0b4f333b1658cdc315b06505cf9dd76\nauthor Jarek Potiuk <jarek.potiuk@polidea.com> 1568995194 +0100\ncommitter GitHub <noreply@github.com> 1568995194 +0100\n\n[AIRFLOW-XXX] Update documentation about variables forcing answer (#6158)\n\n"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/04da038100786da179f977df4eb2bab5352949d9",
+    "html_url": "https://github.com/apache/airflow/commit/04da038100786da179f977df4eb2bab5352949d9",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/04da038100786da179f977df4eb2bab5352949d9/comments",
+    "author": {
+      "login": "potiuk",
+      "id": 595491,
+      "node_id": "MDQ6VXNlcjU5NTQ5MQ==",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/595491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/potiuk",
+      "html_url": "https://github.com/potiuk",
+      "followers_url": "https://api.github.com/users/potiuk/followers",
+      "following_url": "https://api.github.com/users/potiuk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/potiuk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/potiuk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/potiuk/subscriptions",
+      "organizations_url": "https://api.github.com/users/potiuk/orgs",
+      "repos_url": "https://api.github.com/users/potiuk/repos",
+      "events_url": "https://api.github.com/users/potiuk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/potiuk/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7e4330cce0b4f333b1658cdc315b06505cf9dd76",
+        "url": "https://api.github.com/repos/apache/airflow/commits/7e4330cce0b4f333b1658cdc315b06505cf9dd76",
+        "html_url": "https://github.com/apache/airflow/commit/7e4330cce0b4f333b1658cdc315b06505cf9dd76"
+      }
+    ]
+  },
+  {
+    "sha": "7e4330cce0b4f333b1658cdc315b06505cf9dd76",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6N2U0MzMwY2NlMGI0ZjMzM2IxNjU4Y2RjMzE1YjA2NTA1Y2Y5ZGQ3Ng==",
+    "commit": {
+      "author": {
+        "name": "TobKed",
+        "email": "tobiasz.kedzierski@polidea.com",
+        "date": "2019-09-20T09:08:50Z"
+      },
+      "committer": {
+        "name": "Kamil Breguła",
+        "email": "mik-laj@users.noreply.github.com",
+        "date": "2019-09-20T09:08:50Z"
+      },
+      "message": "[AIRFLOW-5475] Normalize gcp_conn_id in operators and hooks (#6093)\n\nCo-Authored-By: Kamil Breguła <kamil.bregula@polidea.com>",
+      "tree": {
+        "sha": "2d1757fb5091994f702097d1922f4381c536b79f",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/2d1757fb5091994f702097d1922f4381c536b79f"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/7e4330cce0b4f333b1658cdc315b06505cf9dd76",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/7e4330cce0b4f333b1658cdc315b06505cf9dd76",
+    "html_url": "https://github.com/apache/airflow/commit/7e4330cce0b4f333b1658cdc315b06505cf9dd76",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/7e4330cce0b4f333b1658cdc315b06505cf9dd76/comments",
+    "author": {
+      "login": "TobKed",
+      "id": 32594847,
+      "node_id": "MDQ6VXNlcjMyNTk0ODQ3",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/32594847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TobKed",
+      "html_url": "https://github.com/TobKed",
+      "followers_url": "https://api.github.com/users/TobKed/followers",
+      "following_url": "https://api.github.com/users/TobKed/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TobKed/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TobKed/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TobKed/subscriptions",
+      "organizations_url": "https://api.github.com/users/TobKed/orgs",
+      "repos_url": "https://api.github.com/users/TobKed/repos",
+      "events_url": "https://api.github.com/users/TobKed/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TobKed/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mik-laj",
+      "id": 12058428,
+      "node_id": "MDQ6VXNlcjEyMDU4NDI4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12058428?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mik-laj",
+      "html_url": "https://github.com/mik-laj",
+      "followers_url": "https://api.github.com/users/mik-laj/followers",
+      "following_url": "https://api.github.com/users/mik-laj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mik-laj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mik-laj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mik-laj/subscriptions",
+      "organizations_url": "https://api.github.com/users/mik-laj/orgs",
+      "repos_url": "https://api.github.com/users/mik-laj/repos",
+      "events_url": "https://api.github.com/users/mik-laj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mik-laj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "efcbd63a7446c90d70335e5982a82010ceeaf79b",
+        "url": "https://api.github.com/repos/apache/airflow/commits/efcbd63a7446c90d70335e5982a82010ceeaf79b",
+        "html_url": "https://github.com/apache/airflow/commit/efcbd63a7446c90d70335e5982a82010ceeaf79b"
+      }
+    ]
+  },
+  {
+    "sha": "efcbd63a7446c90d70335e5982a82010ceeaf79b",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6ZWZjYmQ2M2E3NDQ2YzkwZDcwMzM1ZTU5ODJhODIwMTBjZWVhZjc5Yg==",
+    "commit": {
+      "author": {
+        "name": "TobKed",
+        "email": "tobiasz.kedzierski@polidea.com",
+        "date": "2019-09-20T09:03:27Z"
+      },
+      "committer": {
+        "name": "Kamil Breguła",
+        "email": "mik-laj@users.noreply.github.com",
+        "date": "2019-09-20T09:03:27Z"
+      },
+      "message": "[AIRFLOW-XXX] Add link to GCP Example DAGs source code (#6148)",
+      "tree": {
+        "sha": "dbcf764da48ad4f2f187fb9efb2daac28c30368e",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/dbcf764da48ad4f2f187fb9efb2daac28c30368e"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/efcbd63a7446c90d70335e5982a82010ceeaf79b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/efcbd63a7446c90d70335e5982a82010ceeaf79b",
+    "html_url": "https://github.com/apache/airflow/commit/efcbd63a7446c90d70335e5982a82010ceeaf79b",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/efcbd63a7446c90d70335e5982a82010ceeaf79b/comments",
+    "author": {
+      "login": "TobKed",
+      "id": 32594847,
+      "node_id": "MDQ6VXNlcjMyNTk0ODQ3",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/32594847?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/TobKed",
+      "html_url": "https://github.com/TobKed",
+      "followers_url": "https://api.github.com/users/TobKed/followers",
+      "following_url": "https://api.github.com/users/TobKed/following{/other_user}",
+      "gists_url": "https://api.github.com/users/TobKed/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/TobKed/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/TobKed/subscriptions",
+      "organizations_url": "https://api.github.com/users/TobKed/orgs",
+      "repos_url": "https://api.github.com/users/TobKed/repos",
+      "events_url": "https://api.github.com/users/TobKed/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/TobKed/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mik-laj",
+      "id": 12058428,
+      "node_id": "MDQ6VXNlcjEyMDU4NDI4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12058428?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mik-laj",
+      "html_url": "https://github.com/mik-laj",
+      "followers_url": "https://api.github.com/users/mik-laj/followers",
+      "following_url": "https://api.github.com/users/mik-laj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mik-laj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mik-laj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mik-laj/subscriptions",
+      "organizations_url": "https://api.github.com/users/mik-laj/orgs",
+      "repos_url": "https://api.github.com/users/mik-laj/repos",
+      "events_url": "https://api.github.com/users/mik-laj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mik-laj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f40f4e745f1199104d4853f10ae3d5e75a1e92bf",
+        "url": "https://api.github.com/repos/apache/airflow/commits/f40f4e745f1199104d4853f10ae3d5e75a1e92bf",
+        "html_url": "https://github.com/apache/airflow/commit/f40f4e745f1199104d4853f10ae3d5e75a1e92bf"
+      }
+    ]
+  },
+  {
+    "sha": "f40f4e745f1199104d4853f10ae3d5e75a1e92bf",
+    "node_id": "MDY6Q29tbWl0MzM4ODQ4OTE6ZjQwZjRlNzQ1ZjExOTkxMDRkNDg1M2YxMGFlM2Q1ZTc1YTFlOTJiZg==",
+    "commit": {
+      "author": {
+        "name": "Tomek",
+        "email": "tomasz.urbaszek@polidea.com",
+        "date": "2019-09-19T21:11:26Z"
+      },
+      "committer": {
+        "name": "Kamil Breguła",
+        "email": "mik-laj@users.noreply.github.com",
+        "date": "2019-09-19T21:11:26Z"
+      },
+      "message": "[AIRFLOW-5513] Move example_pubsub_flow.py to GCP package (#6139)",
+      "tree": {
+        "sha": "1b6f0fa326017b52d4a8f0a60b985d9492e99108",
+        "url": "https://api.github.com/repos/apache/airflow/git/trees/1b6f0fa326017b52d4a8f0a60b985d9492e99108"
+      },
+      "url": "https://api.github.com/repos/apache/airflow/git/commits/f40f4e745f1199104d4853f10ae3d5e75a1e92bf",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/airflow/commits/f40f4e745f1199104d4853f10ae3d5e75a1e92bf",
+    "html_url": "https://github.com/apache/airflow/commit/f40f4e745f1199104d4853f10ae3d5e75a1e92bf",
+    "comments_url": "https://api.github.com/repos/apache/airflow/commits/f40f4e745f1199104d4853f10ae3d5e75a1e92bf/comments",
+    "author": {
+      "login": "nuclearpinguin",
+      "id": 9528307,
+      "node_id": "MDQ6VXNlcjk1MjgzMDc=",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9528307?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nuclearpinguin",
+      "html_url": "https://github.com/nuclearpinguin",
+      "followers_url": "https://api.github.com/users/nuclearpinguin/followers",
+      "following_url": "https://api.github.com/users/nuclearpinguin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nuclearpinguin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nuclearpinguin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nuclearpinguin/subscriptions",
+      "organizations_url": "https://api.github.com/users/nuclearpinguin/orgs",
+      "repos_url": "https://api.github.com/users/nuclearpinguin/repos",
+      "events_url": "https://api.github.com/users/nuclearpinguin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nuclearpinguin/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mik-laj",
+      "id": 12058428,
+      "node_id": "MDQ6VXNlcjEyMDU4NDI4",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12058428?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mik-laj",
+      "html_url": "https://github.com/mik-laj",
+      "followers_url": "https://api.github.com/users/mik-laj/followers",
+      "following_url": "https://api.github.com/users/mik-laj/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mik-laj/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mik-laj/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mik-laj/subscriptions",
+      "organizations_url": "https://api.github.com/users/mik-laj/orgs",
+      "repos_url": "https://api.github.com/users/mik-laj/repos",
+      "events_url": "https://api.github.com/users/mik-laj/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mik-laj/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0a5750ade41fa826e1e2b230f1960f8b985c747e",
+        "url": "https://api.github.com/repos/apache/airflow/commits/0a5750ade41fa826e1e2b230f1960f8b985c747e",
+        "html_url": "https://github.com/apache/airflow/commit/0a5750ade41fa826e1e2b230f1960f8b985c747e"
+      }
+    ]
+  }
+]
