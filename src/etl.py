@@ -16,6 +16,7 @@ def main(repo_url, table_name):
 if __name__ == '__main__':
     #repo_url = 'https://api.github.com/repos/tensorflow/tensorflow/commits'
     #table_name = 'git_commit'
-    repo_url = 'https://api.github.com/repos/tensorflow/tensorflow/commits'.format(sys.argv[1], sys.argv[2])
+    #repo_url = 'https://api.github.com/repos/tensorflow/tensorflow/commits'.format(sys.argv[1], sys.argv[2])
+    repo_url = 'https://api.github.com/repos/tensorflow/tensorflow/commits?per_page=2000'.format(sys.argv[1], sys.argv[2])
     table_name = sys.argv[3]
     main(repo_url, table_name)
