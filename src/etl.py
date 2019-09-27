@@ -14,6 +14,8 @@ def main(repo_url, table_name):
 	insert_to_table(output_df,table_name,connection)
 
 if __name__ == '__main__':
-    repo_url = 'https://api.github.com/repos/apache/airflow/commits'
-    table_name = 'git_commit'
+    #repo_url = 'https://api.github.com/repos/tensorflow/tensorflow/commits'
+    #table_name = 'git_commit'
+    repo_url = 'https://api.github.com/repos/tensorflow/tensorflow/commits'.format(sys.argv[1], sys.argv[2])
+    table_name = sys.argv[3]
     main(repo_url, table_name)
