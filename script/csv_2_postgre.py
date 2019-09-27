@@ -43,9 +43,12 @@ def insert_to_table(df,table_name,connection):
     for i,row in df.iterrows():
         try:
             with connection.cursor() as cursor:
-                sql = "INSERT INTO {} (`" +cols + "`) VALUES (" + "%s,"*(len(row)-1) + "%s)"
+                sql = "INSERT INTO {} (" + cols.strip("'") + ") VALUES (" + "%s,"*(len(row)-1) + "%s)"
+                #sql = "INSERT INTO {} (" +cols + ") VALUES (" + "%s,"*(len(row)-1) + "%s)"
+                #cur.execute("INSERT INTO cars(name, price) VALUES('Audi', 52642)")
+
                 sql = sql.format(table_name)
-                #print (sql)
+                print (sql)
                 cursor.execute(sql, tuple(row))
                 connection.commit()
                 print ('insert ok')
@@ -56,9 +59,9 @@ def insert_to_table(df,table_name,connection):
 
 def main(csv_name, table_name):
     """
-    python function load csv, fix csv form, and dump fixed csv data into postgre  
+    python function load csv, fix csv form, and dump fixed csv data into mysql  
     : input  : pandas dataframe 
-    : output : postgre data 
+    : output : mysql data 
     """
     print ('>>>>> process : {} --> {}'.format(csv_name, table_name))
     postgre_config = parse_config('config/postgre.config')
