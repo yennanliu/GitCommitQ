@@ -20,15 +20,15 @@ depends_on = None
 def upgrade():
     op.create_table(
     'git_raw_data',
-    sa.Column('node_id',sa.String(length=100), primary_key=True),
-    sa.Column('html_url', sa.String(length=100), nullable=True),
-    sa.Column('comments_url', sa.String(length=100), nullable=True),
-    sa.Column('commit', sa.String(length=1024), nullable=True),
+    sa.Column('node_id',sa.String(length=256), primary_key=True),
+    sa.Column('html_url', sa.String(length=256), nullable=True),
+    sa.Column('comments_url',  sa.UnicodeText(), nullable=True),
+    sa.Column('commit', sa.UnicodeText(), nullable=True),
     sa.Column('parents',  sa.String(length=512), nullable=True),
-    sa.Column('sha', sa.String(length=100), nullable=True),
-    sa.Column('author', sa.String(length=1024), nullable=True),
-    sa.Column('url', sa.String(length=100), nullable=True),
-    sa.Column('committer', sa.String(length=1024), nullable=True),
+    sa.Column('sha', sa.String(length=256), nullable=True),
+    sa.Column('author',  sa.UnicodeText(), nullable=True),
+    sa.Column('url', sa.String(length=256), nullable=True),
+    sa.Column('committer', sa.UnicodeText(), nullable=True),
     sa.PrimaryKeyConstraint('node_id') 
     )
 
