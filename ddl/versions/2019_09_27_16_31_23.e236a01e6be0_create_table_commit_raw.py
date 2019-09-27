@@ -19,7 +19,7 @@ depends_on = None
 
 def upgrade():
     op.create_table(
-    'git_raw_data',
+    'raw_git_commit',
     sa.Column('node_id',sa.String(length=256), primary_key=True),
     sa.Column('html_url', sa.String(length=256), nullable=True),
     sa.Column('comments_url',  sa.UnicodeText(), nullable=True),
@@ -33,4 +33,4 @@ def upgrade():
     )
 
 def downgrade():
-    op.drop_table('git_raw_data')
+    op.drop_table('raw_git_commit')
