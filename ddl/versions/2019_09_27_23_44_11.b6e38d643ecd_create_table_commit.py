@@ -20,11 +20,11 @@ def upgrade():
     op.create_table(
     'git_commit',
     sa.Column('user_id',sa.String(length=256)),
-    sa.Column('commit_url', sa.String(length=256), primary_key=True),
+    sa.Column('commit_url', sa.String(length=256)),
     sa.Column('repo_url',  sa.String(length=256), nullable=True),
     sa.Column('commit_timestamp',  sa.TIMESTAMP(), nullable=True),
     sa.Column('commit_id', sa.String(length=256), primary_key=True),
-    sa.PrimaryKeyConstraint('commit_url') 
+    sa.PrimaryKeyConstraint('commit_id') 
     )
 
 def downgrade():
