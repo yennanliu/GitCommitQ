@@ -23,12 +23,6 @@ def get_conn(postgre_config):
     """
     Connect to the database
     """
-    # connection = psycopg2.connect(host=postgre_config['host'],
-    #  user=postgre_config['user'],
-    #  password=postgre_config['password'],
-    #  db=postgre_config['dbname'],
-    #  charset='utf8mb4',
-    #  cursorclass=psycopg2.cursors.DictCursor)
     connection = psycopg2.connect(
         database=postgre_config['dbname'], 
         user=postgre_config['user'],
