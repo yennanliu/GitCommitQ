@@ -27,6 +27,6 @@ def extract_inform(df):
     result_df['repo_url'] = df['html_url'].map(get_repo_url)
     result_df['commit_timestamp'] = df['commit'].map(get_commit_timestamp)
     # create commit_id as the table primary key 
-    result_df['commit'] = result_df['user_id'].map(generate_id) 
+    result_df['commit_id'] = result_df['user_id'].map(generate_id) 
     print (result_df)
     return result_df
