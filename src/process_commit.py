@@ -1,4 +1,6 @@
 import pandas as pd 
+from datetime import datetime
+# UDF  
 from get_commit import Commit2df 
 
 def load_df(csv_file):
@@ -12,7 +14,7 @@ def get_repo_url(df_col):
     return df_col.split('commit')[0]
 
 def get_commit_timestamp(df_col):
-    return df_col['author']['date']
+    return datetime.strptime(df_col['author']['date'],"%Y-%m-%dT%H:%M:%SZ")
 
 def extract_inform(df):
     cols = ['user_id', 'commit_url', 'repo_url', 'commit_timestamp']
