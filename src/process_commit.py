@@ -26,9 +26,9 @@ def extract_inform(df):
     print (result_df)
     return result_df
 
-if __name__ == '__main__':
-    repo_url = 'https://api.github.com/repos/apache/airflow/commits'
-    print ('>>>> commit to df ...')
-    df = Commit2df(repo_url)
-    print ('>>>> extract from df ...')
-    extract_inform(df)
+# if __name__ == '__main__':
+#     repo_url = 'https://api.github.com/repos/apache/airflow/commits'
+#     print ('>>>> commit to df ...')
+#     df = Commit2df(repo_url)
+#     print ('>>>> extract from df ...')
+#     extract_inform(df)
