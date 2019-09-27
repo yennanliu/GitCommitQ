@@ -23,8 +23,6 @@ def insert_to_table(df,table_name,connection):
         try:
             with connection.cursor() as cursor:
                 sql = "INSERT INTO {} (" + cols + ") VALUES (" + "%s,"*(len(row)-1) + "%s)"
-                #sql = "INSERT INTO {} (" +cols + ") VALUES (" + "%s,"*(len(row)-1) + "%s)"
-                #cur.execute("INSERT INTO cars(name, price) VALUES('Audi', 52642)")
                 sql = sql.format(table_name)
                 print (sql)
                 cursor.execute(sql, tuple(row))
