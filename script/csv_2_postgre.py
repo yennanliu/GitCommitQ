@@ -39,7 +39,7 @@ def insert_to_table(df,table_name,connection):
     """
     auto visit columns in dataframe, parse row data, and insert to postgre 
     """
-    cols = "`,`".join([str(i) for i in df.columns.tolist()])
+    cols = ",".join([str(i) for i in df.columns.tolist()])
     for i,row in df.iterrows():
         try:
             with connection.cursor() as cursor:
