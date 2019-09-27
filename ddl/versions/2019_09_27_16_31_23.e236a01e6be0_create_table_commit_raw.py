@@ -1,8 +1,8 @@
-"""create table commit_raw_data
+"""create table commit_raw
 
-Revision ID: df07eecc81b0
-Revises: 
-Create Date: 2019-09-27 16:05:06.368645
+Revision ID: e236a01e6be0
+Revises: df07eecc81b0
+Create Date: 2019-09-27 16:31:23.513385
 
 """
 from alembic import op
@@ -10,10 +10,11 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'df07eecc81b0'
+revision = 'e236a01e6be0'
 down_revision = None
 branch_labels = None
 depends_on = None
+
 
 
 def upgrade():
