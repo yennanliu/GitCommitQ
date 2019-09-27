@@ -23,6 +23,7 @@ def upgrade():
     sa.Column('commit_url', sa.String(length=256), primary_key=True),
     sa.Column('repo_url',  sa.String(length=256), nullable=True),
     sa.Column('commit_timestamp',  sa.TIMESTAMP(), nullable=True),
+    sa.Column('commit_id', sa.String(length=256), primary_key=True),
     sa.PrimaryKeyConstraint('commit_url') 
     )
 

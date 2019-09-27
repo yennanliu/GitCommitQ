@@ -1,11 +1,14 @@
 import pandas as pd 
 from datetime import datetime
+import uuid 
 # UDF  
 from get_commit import Commit2df 
 
-def load_df(csv_file):
-    df = pd.read_csv(csv_file) 
-    return df 
+def generate_id(x):
+    """
+    generate tip id from user id, since tip id not exists in orgin data  
+    """
+    return str(uuid.uuid4())
 
 def get_user_id(df_col):
     return df_col['html_url']
@@ -23,12 +26,7 @@ def extract_inform(df):
     result_df['commit_url'] = df['url']
     result_df['repo_url'] = df['html_url'].map(get_repo_url)
     result_df['commit_timestamp'] = df['commit'].map(get_commit_timestamp)
+    # create commit_id as the table primary key 
+    result_df['commit'] = result_df['user_id'].map(generate_id) 
     print (result_df)
     return result_df
-
-# if __name__ == '__main__':
-#     repo_url = 'https://api.github.com/repos/apache/airflow/commits'
-#     print ('>>>> commit to df ...')
-#     df = Commit2df(repo_url)
-#     print ('>>>> extract from df ...')
-#     extract_inform(df)
