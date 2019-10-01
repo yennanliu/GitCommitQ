@@ -4,6 +4,10 @@ import uuid
 # UDF  
 from get_commit import Commit2df 
 
+"""
+help script process commit data to dataframe like form for Postgre dump
+"""
+
 def generate_id(x):
     """
     generate tip id from user id, since tip id not exists in orgin data  
@@ -11,21 +15,33 @@ def generate_id(x):
     return str(uuid.uuid4())
 
 def get_user_id(df_col):
+    """
+    get committer github user id 
+    """
     try:
         return df_col['html_url']
     except:
         return 'NOT_FOUND'
 
 def get_repo_url(df_col):
+    """
+    get commit repo url 
+    """
     try:
         df_col.split('commit')[0]
     except:
         return 'NOT_FOUND'
 
 def get_commit_timestamp(df_col):
+    """
+    transorm commit_timestamp to form "%Y-%m-%dT%H:%M:%SZ"
+    """
     return datetime.strptime(df_col['author']['date'],"%Y-%m-%dT%H:%M:%SZ")
 
 def extract_inform(df):
+    """
+    get output data as pandas dataframe 
+    """
     cols = ['user_id', 'commit_url', 'repo_url', 'commit_timestamp']
     result_df = pd.DataFrame()
     result_df['user_id'] = df['author'].map(get_user_id)

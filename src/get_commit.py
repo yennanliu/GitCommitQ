@@ -4,6 +4,9 @@ import urllib
 import json 
 
 def Commit2df(url):
+    """
+    script transform scraped commit to pandas dataframe
+    """
     opener=urllib.request.build_opener()
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
     page = opener.open(url)
