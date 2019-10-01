@@ -51,27 +51,27 @@ WITH commit_weekday_hour AS
    FROM commit_weekday_hour)
 SELECT hour_group,
        sum(CASE
-               WHEN weekday = 'Sunday' THEN 1
+               WHEN trim(weekday) = 'Sunday' THEN 1
                ELSE 0
            END) AS Sun,
        sum(CASE
-               WHEN weekday = 'Monday' THEN 1
+               WHEN trim(weekday) = 'Monday' THEN 1
                ELSE 0
            END) AS Mon,
        sum(CASE
-               WHEN weekday = 'Tuesday' THEN 1
+               WHEN trim(weekday) = 'Tuesday' THEN 1
                ELSE 0
            END) AS Tue,
        sum(CASE
-               WHEN weekday = 'Wednesday' THEN 1
+               WHEN trim(weekday) = 'Wednesday' THEN 1
                ELSE 0
            END) AS Wed,
        sum(CASE
-               WHEN weekday = 'Thursday' THEN 1
+               WHEN trim(weekday) = 'Thursday' THEN 1
                ELSE 0
            END) AS Thur,
        sum(CASE
-               WHEN weekday = 'Friday' THEN 1
+               WHEN trim(weekday) = 'Friday' THEN 1
                ELSE 0
            END) AS Fri
 FROM commit_weekday_hourgroup
