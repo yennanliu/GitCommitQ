@@ -1,5 +1,11 @@
-# GitCommitQ
+<h1 align="center">GitCommitQ</h1>
 ETL of Commits of a Github Repo
+
+### Main scripts 
+[DB ddl](https://github.com/yennanliu/GitCommitQ/tree/master/ddl/versions)
+[DB config](https://github.com/yennanliu/GitCommitQ/blob/master/config/postgre.config)
+[ETL script](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py)
+[analysis SQL](https://github.com/yennanliu/GitCommitQ/blob/master/sql/analysis.sql)
 
 ### Tech 
 -  Python 3, PostgreSQL, Alembic, Docker
@@ -41,6 +47,18 @@ $ python src/etl.py tensorflow tensorflow git_commit
 $ python src/etl.py mlflow  mlflow git_commit
 
 # STEP 4) CHECK THE SCRAPING GIT DATA 
+
+# Overview of the tables 
+psql> /d 
+              
+                List of relations
+ Schema |      Name       | Type  |    Owner     
+--------+-----------------+-------+--------------
+ public | alembic_version | table | postgre_user
+ public | git_commit      | table | postgre_user
+ public | raw_git_commit  | table | postgre_user
+(3 rows)
+
 
 # List the top 3 authors in the given time period 
 psql> 
