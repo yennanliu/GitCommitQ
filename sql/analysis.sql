@@ -5,8 +5,8 @@ FROM
   (SELECT user_id,
           count(*)
    FROM git_commit
-   WHERE commit_timestamp < <given_timestamp1>
-     AND commit_timestamp > <given_timestamp2>
+   WHERE commit_timestamp < '2019-10-01 00:08:00'
+     AND commit_timestamp > '2019-01-01 00:08:00'
    GROUP BY 1
    ORDER BY 2 DESC
    LIMIT 3) sub
