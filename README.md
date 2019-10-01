@@ -1,11 +1,11 @@
 <h1 align="center">GitCommitQ</h1>
-ETL of Commits of a Github Repo
+<h3 align="center">ETL of Commits of a Github Repo</h3>
 
 ### Main scripts 
-[DB ddl](https://github.com/yennanliu/GitCommitQ/tree/master/ddl/versions)
-[DB config](https://github.com/yennanliu/GitCommitQ/blob/master/config/postgre.config)
-[ETL script](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py)
-[analysis SQL](https://github.com/yennanliu/GitCommitQ/blob/master/sql/analysis.sql)
+* [DB ddl](https://github.com/yennanliu/GitCommitQ/tree/master/ddl/versions)
+* [DB config](https://github.com/yennanliu/GitCommitQ/blob/master/config/postgre.config)
+* [ETL script](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py)
+* [analysis SQL](https://github.com/yennanliu/GitCommitQ/blob/master/sql/analysis.sql)
 
 ### Tech 
 -  Python 3, PostgreSQL, Alembic, Docker
