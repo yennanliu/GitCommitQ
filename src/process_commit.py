@@ -11,10 +11,16 @@ def generate_id(x):
     return str(uuid.uuid4())
 
 def get_user_id(df_col):
-    return df_col['html_url']
+    try:
+        return df_col['html_url']
+    except:
+        return 'NOT_FOUND'
 
 def get_repo_url(df_col):
-    return df_col.split('commit')[0]
+    try:
+        df_col.split('commit')[0]
+    except:
+        return 'NOT_FOUND'
 
 def get_commit_timestamp(df_col):
     return datetime.strptime(df_col['author']['date'],"%Y-%m-%dT%H:%M:%SZ")
