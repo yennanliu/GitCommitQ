@@ -3,7 +3,7 @@
 
 ### Main scripts 
 * [DB ddl](https://github.com/yennanliu/GitCommitQ/tree/master/ddl/versions)
-* [DB config](https://github.com/yennanliu/GitCommitQ/blob/master/config/postgre.config)
+* [config](https://github.com/yennanliu/GitCommitQ/blob/master/config/postgre.config)
 * [ETL script](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py)
 * [analysis SQL](https://github.com/yennanliu/GitCommitQ/blob/master/sql/analysis.sql)
 
@@ -30,7 +30,7 @@
 # STEP 0) : GET THE REPO 
 $ cd ~ && git clone https://github.com/yennanliu/GitCommitQ.git
 $ cd ~ && GitCommitQ
-$ git install -r requirements.txt
+$ pip install -r requirements.txt
 
 # STEP 1) INIT DB 
 # run postgre local 
