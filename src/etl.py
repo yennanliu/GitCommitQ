@@ -13,9 +13,8 @@ def main(repo_url, table_name):
     df = Commit2df(repo_url)
     output_df = extract_inform(df)
     postgre_config = parse_config('config/postgre.config')
-    connection = get_conn(postgre_config)
-    #insert_to_table(output_df,table_name,connection)
-    insert_all_to_table(output_df,table_name,connection)
+    dumptopostgre = DumpToPostgre()
+    dumptopostgre.insert_all_to_table(output_df,table_name,postgre_config)
 
 if __name__ == '__main__':
     repo_url = 'https://api.github.com/repos/{}/{}/commits?per_page=2000'.format(sys.argv[1], sys.argv[2])
