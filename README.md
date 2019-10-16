@@ -126,7 +126,7 @@ psql>
 
 WITH commit_weekday_hour AS
   (SELECT commit_id,
-          date_part('hour', commit_timestamp) AS HOUR,
+          date_part('minute', commit_timestamp)::float/60 + date_part('hour', commit_timestamp)::float AS HOUR,
           to_char(commit_timestamp, 'Day') AS weekday
    FROM git_commit),
      commit_weekday_hourgroup AS
@@ -175,19 +175,16 @@ SELECT hour_group,
 FROM commit_weekday_hourgroup
 GROUP BY 1;
 
-
  hour_group | sun | mon | tue | wed | thur | fri | sat 
 ------------+-----+-----+-----+-----+------+-----+-----
- 12am-3am   |   0 |   4 |   0 |   0 |   23 |  40 |  20
- 12pm-3pm   |   0 |   0 |   0 |   0 |    8 |  49 |   0
- 9pm-12am   |   2 |   0 |   0 |   0 |   47 |  22 |   0
- 6am-9am    |   4 |   4 |   0 |   0 |    6 |  28 |   4
- 3pm-6pm    |   4 |   0 |   0 |   0 |   50 |  31 |   4
- 9am-12pm   |   0 |   0 |   0 |   0 |    4 |   7 |   0
- 3am-6am    |   4 |   2 |   0 |   0 |    8 |  35 |   6
- 6pm-9pm    |   2 |   0 |   0 |   0 |   32 |  40 |   0
+ 12am-3am   |   0 |   4 |   0 |   0 |   21 |  40 |  18
+ 12pm-3pm   |   0 |   0 |   0 |   0 |    6 |  35 |   0
+ 9pm-12am   |   4 |   0 |   0 |   0 |   55 |  30 |   0
+ 6am-9am    |   2 |   2 |   0 |   0 |    6 |  21 |   2
+ 3pm-6pm    |   0 |   0 |   0 |   0 |   36 |  37 |   2
+ 9am-12pm   |   4 |   2 |   0 |   0 |    6 |  28 |   4
+ 3am-6am    |   2 |   2 |   0 |   0 |    6 |  21 |   6
+ 6pm-9pm    |   4 |   0 |   0 |   0 |   42 |  40 |   2
 (8 rows)
-
-
 
 ```

@@ -32,7 +32,7 @@ WHERE user_id IN
 -- Produce a heatmap of commits 
 WITH commit_weekday_hour AS
   (SELECT commit_id,
-          date_part('hour', commit_timestamp) AS HOUR,
+          date_part('minute', commit_timestamp)::float/60 + date_part('hour', commit_timestamp)::float AS HOUR,
           to_char(commit_timestamp, 'Day') AS weekday
    FROM git_commit),
      commit_weekday_hourgroup AS
