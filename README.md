@@ -49,7 +49,7 @@ $ python src/etl.py mlflow  mlflow git_commit
 # STEP 4) CHECK THE SCRAPING GIT DATA 
 
 # Overview of the tables 
-psql> /d 
+psql> \d 
               
                 List of relations
  Schema |      Name       | Type  |    Owner     
@@ -57,6 +57,17 @@ psql> /d
  public | alembic_version | table | postgre_user
  public | git_commit      | table | postgre_user
  public | raw_git_commit  | table | postgre_user
+(3 rows)
+
+# data overview 
+psql> 
+select * from git_commit limit 3;
+
+          user_id           |                                             commit_url                                              |                 repo_url                  |  commit_timestamp   |              commit_id               
+----------------------------+-----------------------------------------------------------------------------------------------------+-------------------------------------------+---------------------+--------------------------------------
+ https://github.com/mdanatg | https://api.github.com/repos/tensorflow/tensorflow/commits/c7f3bb27278a2392b55cde6e3bd6714556511f9d | https://github.com/tensorflow/tensorflow/ | 2019-09-27 15:48:22 | b499cb40-6cf9-46d1-91f8-ee0ebb70a51f
+ https://github.com/mrry    | https://api.github.com/repos/tensorflow/tensorflow/commits/250a5d47828aa229857266d59b32314bda79bcb3 | https://github.com/tensorflow/tensorflow/ | 2019-09-27 15:05:05 | 620240fd-7d40-4437-9df9-610a132aa84a
+ https://github.com/alextp  | https://api.github.com/repos/tensorflow/tensorflow/commits/967e4a47f02c70e9978308f3410dd14821a1ac0b | https://github.com/tensorflow/tensorflow/ | 2019-09-27 14:28:27 | 4d17bc5e-bfbe-4cc9-b45b-2e879a190ce3
 (3 rows)
 
 
@@ -156,20 +167,27 @@ SELECT hour_group,
        sum(CASE
                WHEN trim(weekday) = 'Friday' THEN 1
                ELSE 0
-           END) AS Fri
+           END) AS Fri,
+       sum(CASE
+               WHEN trim(weekday) = 'Saturday' THEN 1
+               ELSE 0
+           END) AS Sat
 FROM commit_weekday_hourgroup
 GROUP BY 1;
 
- hour_group | sun | mon | tue | wed | thur | fri 
-------------+-----+-----+-----+-----+------+-----
- 6pm-9pm    |   1 |  28 |   6 |   2 |    1 |   5
- 6am-9am    |   2 |   3 |   8 |   1 |    0 |   0
- 3am-6am    |   3 |   4 |  10 |   0 |    2 |   0
- 12am-3am   |   1 |   4 |  18 |   4 |    4 |   1
- 9am-12pm   |   0 |   1 |   1 |   0 |    0 |   0
- 12pm-3pm   |   0 |   3 |   0 |   0 |    0 |   1
- 3pm-6pm    |   2 |  31 |   5 |   4 |    3 |   6
- 9pm-12am   |   2 |  12 |   7 |   2 |    1 |   3
+
+ hour_group | sun | mon | tue | wed | thur | fri | sat 
+------------+-----+-----+-----+-----+------+-----+-----
+ 12am-3am   |   0 |   4 |   0 |   0 |   23 |  40 |  20
+ 12pm-3pm   |   0 |   0 |   0 |   0 |    8 |  49 |   0
+ 9pm-12am   |   2 |   0 |   0 |   0 |   47 |  22 |   0
+ 6am-9am    |   4 |   4 |   0 |   0 |    6 |  28 |   4
+ 3pm-6pm    |   4 |   0 |   0 |   0 |   50 |  31 |   4
+ 9am-12pm   |   0 |   0 |   0 |   0 |    4 |   7 |   0
+ 3am-6am    |   4 |   2 |   0 |   0 |    8 |  35 |   6
+ 6pm-9pm    |   2 |   0 |   0 |   0 |   32 |  40 |   0
 (8 rows)
+
+
 
 ```

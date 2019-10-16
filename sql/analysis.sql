@@ -73,6 +73,10 @@ SELECT hour_group,
        sum(CASE
                WHEN trim(weekday) = 'Friday' THEN 1
                ELSE 0
-           END) AS Fri
+           END) AS Fri,
+       sum(CASE
+               WHEN trim(weekday) = 'Saturday' THEN 1
+               ELSE 0
+           END) AS Sat
 FROM commit_weekday_hourgroup
 GROUP BY 1;
