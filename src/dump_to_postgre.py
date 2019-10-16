@@ -32,3 +32,23 @@ def insert_to_table(df,table_name,connection):
             print (e, 'insert failed', i, row)
     connection.close()
     cursor.close()
+
+def insert_all_to_table(df,table_name,connection):
+    """
+    auto visit columns in dataframe, parse row data, and insert to postgre 
+    """
+    cols = ",".join([str(i) for i in df.columns.tolist()])
+    to_insert = df.values.tolist()
+    try:
+        with connection.cursor() as cursor:
+            #sql = "INSERT INTO git_commit (user_id,commit_url,repo_url,commit_timestamp,commit_id) VALUES (%s,%s,%s,%s,%s)"
+            sql = "INSERT INTO {} (" + cols + ") VALUES (%s,%s,%s,%s,%s)"
+            sql = sql.format(table_name)
+            print (sql)
+            cursor.executemany(sql, to_insert)
+            connection.commit()
+            print ('all insert ok')
+    except Exception as e:
+        print (e, 'all insert failed')
+    connection.close()
+    cursor.close()
