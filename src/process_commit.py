@@ -1,5 +1,5 @@
 import pandas as pd 
-from datetime import datetime
+import datetime
 import uuid 
 # UDF  
 from get_commit import Commit2df 
@@ -36,7 +36,7 @@ def get_commit_timestamp(df_col):
     """
     transorm commit_timestamp to form "%Y-%m-%dT%H:%M:%SZ"
     """
-    return datetime.strptime(df_col['author']['date'],"%Y-%m-%dT%H:%M:%SZ")
+    return datetime.datetime.strptime(df_col['author']['date'],"%Y-%m-%dT%H:%M:%SZ")
 
 def extract_inform(df):
     """

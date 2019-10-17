@@ -9,6 +9,7 @@ def Commit2df(url):
     """
     opener=urllib.request.build_opener()
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+    print (url)
     page = opener.open(url)
     soup = BeautifulSoup(page,"html.parser")
     # BeautifulSoup response -> text -> json 
