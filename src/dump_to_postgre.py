@@ -40,6 +40,9 @@ class DumpToPostgre:
         """
         insert whole df to postgre once by executemany method
         """
+        if len(df) == 0:
+            print ('Null data, pass data insert')
+            return 
         connection = self.get_conn(postgre_config)
         cols = ",".join([str(i) for i in df.columns.tolist()])
         to_insert = df.values.tolist()

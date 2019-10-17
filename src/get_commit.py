@@ -14,6 +14,9 @@ def Commit2df(url):
     soup = BeautifulSoup(page,"html.parser")
     # BeautifulSoup response -> text -> json 
     data_dict = json.loads(soup.getText())
+    if data_dict == []:
+        print ('No commit data, return null dataframe')
+        return pd.DataFrame()
     df_cols = list(data_dict[0].keys())
     collected = [ []  for i in range(len(df_cols))]
     for i in range(len(data_dict)):

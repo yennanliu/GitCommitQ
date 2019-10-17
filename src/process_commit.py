@@ -42,6 +42,9 @@ def extract_inform(df):
     """
     get output data as pandas dataframe 
     """
+    if len(df) == 0:
+        print ('Null data, pass data process')
+        return df
     cols = ['user_id', 'commit_url', 'repo_url', 'commit_timestamp']
     result_df = pd.DataFrame()
     result_df['user_id'] = df['author'].map(get_user_id)
