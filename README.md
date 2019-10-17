@@ -43,8 +43,8 @@ $ bash script/start_postgre.sh
 $ alembic upgrade head
 
 # STEP 3) RUN ETL DEMO 
-$ python src/etl.py tensorflow tensorflow git_commit
-$ python src/etl.py mlflow  mlflow git_commit
+$ python src/etl.py apache spark 2019-01-01 2019-10-18
+$ python src/etl.py mlflow mlflow 2019-01-01 2019-10-18
 
 # STEP 4) CHECK THE SCRAPING GIT DATA 
 
