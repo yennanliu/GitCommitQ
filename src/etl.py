@@ -1,6 +1,7 @@
 import sys
 sys.path.append("./script/")
 import datetime
+import time
 # UDF 
 from utility import * 
 from get_commit import *
@@ -25,6 +26,7 @@ def main(repo_owner, repo_name, start_date, end_date):
     postgre_config = parse_config('config/postgre.config')
     dumptopostgre = DumpToPostgre()
     dumptopostgre.insert_all_to_table(output_df,'git_commit',postgre_config)
+    time.sleep(3)
 
 if __name__ == '__main__':
     repo_owner, repo_name, start_date, end_date =  sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
