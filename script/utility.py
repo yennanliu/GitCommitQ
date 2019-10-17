@@ -1,7 +1,6 @@
 import math
 import json
 import subprocess
-from datetime import datetime
 
 def parse_config(configfile):
     """
@@ -11,7 +10,6 @@ def parse_config(configfile):
     """
     conf = json.load(open(configfile, "r"))
     return replace_envvars_with_vals(conf)
-
 
 def replace_envvars_with_vals(dic):
     """
