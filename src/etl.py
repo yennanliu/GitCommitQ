@@ -31,7 +31,17 @@ def main(repo_owner, repo_name, start_date, end_date):
     dumptopostgre.insert_all_to_table(output_df,'git_commit',postgre_config)
     time.sleep(3)  # sleep 3 sec after every scraping, avoid block by server
 
-if __name__ == '__main__':
+def run():
+    if len(sys.argv) != 5:
+        print (""" 
+               Please run the etl.py script with valid arguments:
+               python src/etl.py <repo_user> <repo_name> <start_date> <end_date>
+               e.g. : python src/etl.py apache spark 2019-09-01 2019-10-30
+               """)
+        return 
     repo_owner, repo_name, start_date, end_date =  sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
     date_list = daterange_2_datelist(start_date, end_date)
     [ main(repo_owner, repo_name, date, date) for date in date_list]
+
+if __name__ == '__main__':
+    run()
