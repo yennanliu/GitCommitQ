@@ -12,7 +12,8 @@ def Commit2df(url):
     response = requests.get(url)
     # requests response -> text (python string) -> json 
     data_dict = json.loads(response.text)
-    if data_dict == []:   # if there is no data, pass the scrapping process
+    if response.status_code != 200:   # if there is no data, pass the scrapping process
+        print ("Not a valid response, repsone code : {}".format(response.status_code))
         print ('No commit data, return null dataframe')
         return pd.DataFrame()
     df_cols = list(data_dict[0].keys())
