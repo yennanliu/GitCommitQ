@@ -2,18 +2,16 @@ from bs4 import BeautifulSoup
 import pandas as pd 
 import urllib 
 import json 
+import requests
 
 def Commit2df(url):
     """
     script transform scraped commit to pandas dataframe
     """
-    opener=urllib.request.build_opener()
-    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
     print (url)
-    page = opener.open(url)
-    soup = BeautifulSoup(page,"html.parser")
-    # BeautifulSoup response -> text -> json 
-    data_dict = json.loads(soup.getText())
+    response = requests.get(url)
+    # requests response -> text (python string) -> json 
+    data_dict = json.loads(response.text)
     if data_dict == []:   # if there is no data, pass the scrapping process
         print ('No commit data, return null dataframe')
         return pd.DataFrame()
