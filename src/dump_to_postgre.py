@@ -40,7 +40,7 @@ class DumpToPostgre:
         """
         insert whole df to postgre once by executemany method
         """
-        if len(df) == 0:
+        if len(df) == 0:  # if there is no data, pass the insert process
             print ('Null data, pass data insert')
             return 
         connection = self.get_conn(postgre_config)

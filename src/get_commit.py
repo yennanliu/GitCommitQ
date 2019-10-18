@@ -14,7 +14,7 @@ def Commit2df(url):
     soup = BeautifulSoup(page,"html.parser")
     # BeautifulSoup response -> text -> json 
     data_dict = json.loads(soup.getText())
-    if data_dict == []:
+    if data_dict == []:   # if there is no data, pass the scrapping process
         print ('No commit data, return null dataframe')
         return pd.DataFrame()
     df_cols = list(data_dict[0].keys())

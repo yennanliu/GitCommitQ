@@ -42,7 +42,7 @@ def extract_inform(df):
     """
     get output data as pandas dataframe 
     """
-    if len(df) == 0:
+    if len(df) == 0: # if there is no data, pass the data transform process
         print ('Null data, pass data process')
         return df
     cols = ['user_id', 'commit_url', 'repo_url', 'commit_timestamp']
