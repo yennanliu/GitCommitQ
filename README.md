@@ -52,7 +52,7 @@ commit_fact(
     sa.PrimaryKeyConstraint('commit_id') 
     )
 
-commit_contributor(
+commit_commitor(
     sa.Column('user_id',sa.String(length=256)),
     sa.Column('last_commit_time',  sa.TIMESTAMP(), nullable=True),
     sa.Column('commit_count', sa.String(length=256), primary_key=True),
