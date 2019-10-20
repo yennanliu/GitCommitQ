@@ -68,12 +68,18 @@ commited_repo(
 
 ```
 
-<details>
+</details>
 
 
 ### Quick start
 
+
+<details>
+<summary>Quick start</summary>
+
 ```bash
+############ PART A) : PROCESS/INSERT DATA
+
 # STEP 0) : GET THE REPO 
 $ cd ~ && git clone https://github.com/yennanliu/GitCommitQ.git
 $ cd ~ && GitCommitQ
@@ -92,6 +98,10 @@ $ alembic upgrade head
 # STEP 3) RUN ETL DEMO 
 $ python src/etl.py apache spark 2019-01-01 2019-10-18
 $ python src/etl.py mlflow mlflow 2019-01-01 2019-10-18
+```
+
+```bash
+############ PART B) : ANALYSIS WITH DATA
 
 # STEP 4) CHECK THE SCRAPING GIT DATA 
 
@@ -235,3 +245,4 @@ GROUP BY 1;
 (8 rows)
 
 ```
+</details>
