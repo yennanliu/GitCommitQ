@@ -21,7 +21,6 @@
 ├── script              : Help script for etl, env set up 
 ├── sql                 : SQL get data as requirement   
 └── src                 : Main scripts doing data process : etl.py 
-
 ```
 
 ### Workflow
@@ -31,7 +30,6 @@ Github  ---etl.py github API--->  PostgreSQL
                                   ↓        ↑
                                   ↓________↑
                               create_fact_attr_tables.py
-
 ```
 
 
@@ -76,7 +74,6 @@ commited_repo(
     sa.Column('last_commited_timestamp',  sa.TIMESTAMP(), nullable=True),
     sa.PrimaryKeyConstraint('repo_url') 
     )
-
 ```
 
 </details>
