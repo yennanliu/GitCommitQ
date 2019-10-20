@@ -95,9 +95,13 @@ $ bash script/start_postgre.sh
 # STEP 2) RUN DB MIGRATION 
 $ alembic upgrade head
 
-# STEP 3) RUN ETL DEMO 
+# STEP 3) RUN ETL 1 - data collect
 $ python src/etl.py apache spark 2019-01-01 2019-10-18
 $ python src/etl.py mlflow mlflow 2019-01-01 2019-10-18
+
+# STEP 3) RUN ETL 2 -  create fact/attribution tables 
+$ python src/create_fact_attr_table.py
+
 ```
 
 ```bash
@@ -112,9 +116,12 @@ psql> \d
  Schema |      Name       | Type  |    Owner     
 --------+-----------------+-------+--------------
  public | alembic_version | table | postgre_user
+ public | commit_commitor | table | postgre_user
+ public | commit_fact     | table | postgre_user
+ public | commited_repo   | table | postgre_user
  public | git_commit      | table | postgre_user
  public | raw_git_commit  | table | postgre_user
-(3 rows)
+(6 rows)
 
 # data overview 
 psql> 
@@ -127,6 +134,32 @@ select * from git_commit limit 3;
  https://github.com/alextp  | https://api.github.com/repos/tensorflow/tensorflow/commits/967e4a47f02c70e9978308f3410dd14821a1ac0b | https://github.com/tensorflow/tensorflow/ | 2019-09-27 14:28:27 | 4d17bc5e-bfbe-4cc9-b45b-2e879a190ce3
 (3 rows)
 
+psql>
+select * from commit_fact limit 3;
+               commitor_id                |  commit_timestamp   |                                             commit_url                                              |                  repo_id                  
+------------------------------------------+---------------------+-----------------------------------------------------------------------------------------------------+-------------------------------------------
+ https://github.com/tomhennigan           | 2019-09-30 08:34:24 | https://api.github.com/repos/tensorflow/tensorflow/commits/a5afbfbd7a03596d74e99e6f65c1809a0561732b | https://github.com/tensorflow/tensorflow/
+ https://github.com/tensorflower-gardener | 2019-09-30 09:02:51 | https://api.github.com/repos/tensorflow/tensorflow/commits/c4756e3a9939ada157055c881c6cf6e5d4f9c2dc | https://github.com/tensorflow/tensorflow/
+ https://github.com/anj-s                 | 2019-09-27 21:00:43 | https://api.github.com/repos/tensorflow/tensorflow/commits/35d3ccf6a6893c82ad6b1c49cbebd47625e902b3 | https://github.com/tensorflow/tensorflow/
+(3 rows)
+
+psql>
+select * from commit_commitor limit 3;
+
+         commitor_id          |  first_commit_time  |  last_commit_time   | commit_count 
+------------------------------+---------------------+---------------------+--------------
+ https://github.com/deven-amd | 2019-09-27 06:49:51 | 2019-09-27 06:49:51 |            1
+ https://github.com/gmagogsfm | 2019-09-27 23:20:04 | 2019-09-30 00:27:03 |            3
+ https://github.com/fdxmw     | 2019-09-26 19:29:22 | 2019-09-27 19:42:51 |            3
+(3 rows)
+
+psql>
+select * from commited_repo limit 3;
+
+                  repo_id                  | first_commited_time | last_commited_time  | commited_count 
+-------------------------------------------+---------------------+---------------------+----------------
+ https://github.com/tensorflow/tensorflow/ | 2019-09-26 00:23:29 | 2019-09-30 09:02:51 |            176
+(1 row)
 
 # List the top 3 authors in the given time period 
 psql> 
