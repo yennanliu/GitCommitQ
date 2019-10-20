@@ -24,6 +24,17 @@
 
 ```
 
+### Workflow
+```
+Github  ---etl.py github API--->  PostgreSQL
+                                  ↓        ↑
+                                  ↓        ↑
+                                  ↓________↑
+                              create_fact_attr_tables.py
+
+```
+
+
 ### DB model
 
 <details>
