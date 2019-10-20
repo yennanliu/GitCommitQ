@@ -1,12 +1,6 @@
 import pandas as pd 
 import datetime
 import uuid 
-# UDF  
-from get_commit import Commit2df 
-
-"""
-help script process commit data to dataframe like form for Postgre dump
-"""
 
 def generate_id(x):
     """
