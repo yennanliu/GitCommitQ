@@ -16,7 +16,10 @@ def Commit2df(url):
         return pd.DataFrame()
     # requests response -> text (python string) -> json 
     data_dict = json.loads(response.text)
-    df_cols = list(data_dict[0].keys())
+    if len(data_dict) == 0:
+        print ('Null scrapping data')
+        return pd.DataFrame()
+    df_cols = ['comments_url', 'node_id', 'commit', 'parents', 'url', 'author', 'sha', 'html_url', 'committer']
     collected = [ []  for i in range(len(df_cols))]
     for i in range(len(data_dict)):
         for index, col in enumerate(df_cols):
