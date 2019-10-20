@@ -24,6 +24,53 @@
 
 ```
 
+### DB model
+
+<details>
+<summary>DB model</summary>
+
+```
+raw_commit(
+    sa.Column('node_id',sa.String(length=256), primary_key=True),
+    sa.Column('html_url', sa.String(length=256), nullable=True),
+    sa.Column('comments_url',  sa.UnicodeText(), nullable=True),
+    sa.Column('commit', sa.UnicodeText(), nullable=True),
+    sa.Column('parents',  sa.String(length=512), nullable=True),
+    sa.Column('sha', sa.String(length=256), nullable=True),
+    sa.Column('author',  sa.UnicodeText(), nullable=True),
+    sa.Column('url', sa.String(length=256), nullable=True),
+    sa.Column('committer', sa.UnicodeText(), nullable=True),
+    sa.PrimaryKeyConstraint('node_id') 
+    )
+
+commit_fact(
+    sa.Column('user_id',sa.String(length=256)),
+    sa.Column('commit_url', sa.String(length=256)),
+    sa.Column('repo_url',  sa.String(length=256), nullable=True),
+    sa.Column('commit_timestamp',  sa.TIMESTAMP(), nullable=True),
+    sa.Column('commit_id', sa.String(length=256), primary_key=True),
+    sa.PrimaryKeyConstraint('commit_id') 
+    )
+
+commit_contributor(
+    sa.Column('user_id',sa.String(length=256)),
+    sa.Column('last_commit_time',  sa.TIMESTAMP(), nullable=True),
+    sa.Column('commit_count', sa.String(length=256), primary_key=True),
+    sa.PrimaryKeyConstraint('user_id') 
+    )
+
+commited_repo(
+    sa.Column('repo_url',  sa.String(length=256), nullable=True),
+    sa.Column('committ_count', sa.String(length=256)),
+    sa.Column('last_commited_timestamp',  sa.TIMESTAMP(), nullable=True),
+    sa.PrimaryKeyConstraint('repo_url') 
+    )
+
+```
+
+<details>
+
+
 ### Quick start
 
 ```bash
