@@ -1,4 +1,4 @@
--- sql clean commit, and create commit fact table 
+-- commit_fact : sql clean commit, and create commit fact table 
 
 DROP TABLE IF EXISTS commit_fact;
 CREATE TABLE commit_fact AS WITH cleaned_commit AS
@@ -11,7 +11,7 @@ CREATE TABLE commit_fact AS WITH cleaned_commit AS
 SELECT *
 FROM cleaned_commit;
 
--- sql build commitor table (repo code contributor)
+-- commit_commitor : sql build commitor table (repo code contributor)
 
 DROP TABLE IF EXISTS commit_commitor;
 CREATE TABLE commit_commitor AS WITH commitor AS
@@ -24,8 +24,7 @@ CREATE TABLE commit_commitor AS WITH commitor AS
 SELECT *
 FROM commitor;
 
-
--- sql build commited repo (repo contributed by the commitor) 
+-- commited_repo: sql build commited repo (repo contributed by the commitor) 
 
 DROP TABLE IF EXISTS commited_repo;
 CREATE TABLE commited_repo AS WITH repo AS
@@ -37,10 +36,3 @@ CREATE TABLE commited_repo AS WITH repo AS
    GROUP BY 1)
 SELECT *
 FROM repo;
-
-
-
-
-
-
-
