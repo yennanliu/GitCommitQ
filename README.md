@@ -40,20 +40,7 @@ Github  ---etl.py github API--->  PostgreSQL
 <summary>DB model</summary>
 
 ```
-raw_commit(
-    sa.Column('node_id',sa.String(length=256), primary_key=True),
-    sa.Column('html_url', sa.String(length=256), nullable=True),
-    sa.Column('comments_url',  sa.UnicodeText(), nullable=True),
-    sa.Column('commit', sa.UnicodeText(), nullable=True),
-    sa.Column('parents',  sa.String(length=512), nullable=True),
-    sa.Column('sha', sa.String(length=256), nullable=True),
-    sa.Column('author',  sa.UnicodeText(), nullable=True),
-    sa.Column('url', sa.String(length=256), nullable=True),
-    sa.Column('committer', sa.UnicodeText(), nullable=True),
-    sa.PrimaryKeyConstraint('node_id') 
-    )
-
-commit_fact(
+git_commit(
     sa.Column('user_id',sa.String(length=256)),
     sa.Column('commit_url', sa.String(length=256)),
     sa.Column('repo_url',  sa.String(length=256), nullable=True),
@@ -62,18 +49,27 @@ commit_fact(
     sa.PrimaryKeyConstraint('commit_id') 
     )
 
-commit_commitor(
+commit_fact(
     sa.Column('user_id',sa.String(length=256)),
-    sa.Column('last_commit_time',  sa.TIMESTAMP(), nullable=True),
-    sa.Column('commit_count', sa.String(length=256), primary_key=True),
-    sa.PrimaryKeyConstraint('user_id') 
+    sa.Column('commit_timestamp',  sa.TIMESTAMP()),    
+    sa.Column('commit_url', sa.String(length=256),  primary_key=True),
+    sa.PrimaryKeyConstraint('commit_url') 
+    )
+
+commit_commitor(
+    sa.Column('commitor_id',sa.String(length=256), primary_key=True),
+    sa.Column('first_commit_time',  sa.TIMESTAMP(), nullable=True),
+    sa.Column('last_commit_time',  sa.TIMESTAMP(), nullable=True),    
+    sa.Column('commit_count', sa.integer()),
+    sa.PrimaryKeyConstraint('commitor_id') 
     )
 
 commited_repo(
-    sa.Column('repo_url',  sa.String(length=256), nullable=True),
-    sa.Column('committ_count', sa.String(length=256)),
-    sa.Column('last_commited_timestamp',  sa.TIMESTAMP(), nullable=True),
-    sa.PrimaryKeyConstraint('repo_url') 
+    sa.Column('repo_id',  sa.String(length=256),  primary_key=True),
+    sa.Column('first_commited_time',  sa.TIMESTAMP(), 
+    sa.Column('last_commited_timestamp',  sa.TIMESTAMP(),     
+    sa.Column('commited_count', sa.integer()),
+    sa.PrimaryKeyConstraint('repo_id') 
     )
 ```
 

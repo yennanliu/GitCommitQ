@@ -12,6 +12,7 @@ def Commit2df(url):
         print ("""
                Not a valid response, repsone code : {}
                No commit data, return null dataframe
+               Maybe try waiting a while or scrping with proxy channels
                """.format(response.status_code))
         return pd.DataFrame()
     # requests response -> text (python string) -> json 
