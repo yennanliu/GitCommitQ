@@ -2,10 +2,10 @@
 <h3 align="center">ETL of Commits of a Github Repo</h3>
 
 ### Main scripts 
-* [DB ddl](https://github.com/yennanliu/GitCommitQ/tree/master/ddl/versions)
-* [config](https://github.com/yennanliu/GitCommitQ/blob/master/config)
-* [ETL : etl.py](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py) etl call Github API, process/transform/clean the data, and insert to Postgre
-* [ETL : create_fact_attr_table.py](https://github.com/yennanliu/GitCommitQ/blob/master/src/create_fact_attr_table.py) etl generate facts/attribution tables in Postgre 
+* [DB ddl](https://github.com/yennanliu/GitCommitQ/tree/master/ddl/versions) - DB description language (DDL) build DB via migration
+* [config](https://github.com/yennanliu/GitCommitQ/blob/master/config) - config files for DB connections
+* [ETL : etl.py](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py) - etl call Github API, process/transform/clean the data, and insert to Postgre
+* [ETL : create_fact_attr_table.py](https://github.com/yennanliu/GitCommitQ/blob/master/src/create_fact_attr_table.py) - etl generate facts/attribution tables in Postgre 
 * [SQL build table/get insights](https://github.com/yennanliu/GitCommitQ/blob/master/sql)
 
 ### Tech 
