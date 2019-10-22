@@ -3,9 +3,10 @@
 
 ### Main scripts 
 * [DB ddl](https://github.com/yennanliu/GitCommitQ/tree/master/ddl/versions)
-* [config](https://github.com/yennanliu/GitCommitQ/blob/master/config/postgre.config)
-* [ETL script](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py)
-* [analysis SQL](https://github.com/yennanliu/GitCommitQ/blob/master/sql/analysis.sql)
+* [config](https://github.com/yennanliu/GitCommitQ/blob/master/config)
+* [ETL script1](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py)
+* [ETL script2](https://github.com/yennanliu/GitCommitQ/blob/master/src/create_fact_attr_table.py)
+* [SQL build table/get insights](https://github.com/yennanliu/GitCommitQ/blob/master/sql)
 
 ### Tech 
 -  Python 3, PostgreSQL, Alembic, Docker
@@ -104,8 +105,8 @@ $ bash script/start_postgre.sh
 $ alembic upgrade head
 
 # STEP 3) RUN ETL 1 - data collect
-$ python src/etl.py apache spark 2019-01-01 2019-10-18
-$ python src/etl.py mlflow mlflow 2019-01-01 2019-10-18
+$ python src/etl.py apache spark 2019-01-01 2019-01-31
+$ python src/etl.py mlflow mlflow 2019-01-01 2019-01-31
 
 # STEP 3) RUN ETL 2 -  create fact/attribution tables 
 $ python src/create_fact_attr_table.py
