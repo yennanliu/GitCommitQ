@@ -4,8 +4,8 @@
 ### Main scripts 
 * [DB ddl](https://github.com/yennanliu/GitCommitQ/tree/master/ddl/versions)
 * [config](https://github.com/yennanliu/GitCommitQ/blob/master/config)
-* [ETL script1](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py)
-* [ETL script2](https://github.com/yennanliu/GitCommitQ/blob/master/src/create_fact_attr_table.py)
+* [ETL : etl.py](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py) etl call Github API, process/transform/clean the data, and insert to Postgre
+* [ETL : create_fact_attr_table.py](https://github.com/yennanliu/GitCommitQ/blob/master/src/create_fact_attr_table.py) etl generate facts/attribution tables in Postgre 
 * [SQL build table/get insights](https://github.com/yennanliu/GitCommitQ/blob/master/sql)
 
 ### Tech 
@@ -26,11 +26,12 @@
 
 ### Workflow
 ```
-Github  ---etl.py github API--->  PostgreSQL
-                                  ↓        ↑
+Github      ----- etl.py ------>  PostgreSQL
+               (scrape data)      ↓        ↑
                                   ↓        ↑
                                   ↓________↑
-                              create_fact_attr_tables.py
+                              create_fact_attr_tables.py 
+                               (sync Postgre tables)
 ```
 
 
