@@ -6,7 +6,7 @@
 * [config](https://github.com/yennanliu/GitCommitQ/blob/master/config) - config files for DB connections
 * [ETL : etl.py](https://github.com/yennanliu/GitCommitQ/blob/master/src/etl.py) - etl call Github API, process/transform/clean the data, and insert to Postgre
 * [ETL : create_fact_attr_table.py](https://github.com/yennanliu/GitCommitQ/blob/master/src/create_fact_attr_table.py) - etl generate facts/attribution tables in Postgre 
-* [SQL build table/get insights](https://github.com/yennanliu/GitCommitQ/blob/master/sql)
+* [SQL](https://github.com/yennanliu/GitCommitQ/blob/master/sql) - SQL build tables and get needed insights
 
 ### Tech 
 -  Python 3, PostgreSQL, Alembic, Docker
