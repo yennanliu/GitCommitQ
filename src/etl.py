@@ -3,10 +3,10 @@ sys.path.append("./script/")
 import datetime
 import time
 # UDF 
-from utility import * 
-from get_commit import *
-from process_commit import *
-from dump_to_postgre import * 
+from utility import parse_config
+from get_commit import Commit2df
+from process_commit import extract_inform
+from dump_to_postgre import DumpToPostgre 
 
 def daterange_2_datelist(start_date, end_date):
     """
