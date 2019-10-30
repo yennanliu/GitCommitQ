@@ -2,7 +2,7 @@ import sys
 sys.path.append("./script/")
 import psycopg2
 # UDF 
-from utility import * 
+from utility import parse_config
 
 class DumpToPostgre:
 

@@ -3,8 +3,8 @@ sys.path.append("./script/")
 import datetime
 import time
 # UDF 
-from utility import * 
-from dump_to_postgre import * 
+from utility import parse_config 
+from dump_to_postgre import DumpToPostgre 
 
 sql_commit_fact = """ 
 DROP TABLE IF EXISTS commit_fact;
