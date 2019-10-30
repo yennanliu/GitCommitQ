@@ -2,3 +2,5 @@ alembic
 requests
 pandas
 psycopg2
+pytest
+coveralls
