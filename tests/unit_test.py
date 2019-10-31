@@ -19,10 +19,10 @@ def test_get_user_id():
     output = get_user_id_(df_col)
     assert output == "https://github.com/hanyucui"
 
-# def test_get_repo_url():
-#     df_col = {'url': 'https://api.github.com/users/hanyucui', 'avatar_url': 'https://avatars0.githubusercontent.com/u/9649417?v=4', 'repos_url': 'https://api.github.com/users/hanyucui/repos', 'following_url': 'https://api.github.com/users/hanyucui/following{/other_user}', 'node_id': 'MDQ6VXNlcjk2NDk0MTc=', 'login': 'hanyucui', 'site_admin': False, 'html_url': 'https://github.com/hanyucui', 'starred_url': 'https://api.github.com/users/hanyucui/starred{/owner}{/repo}', 'events_url': 'https://api.github.com/users/hanyucui/events{/privacy}', 'gravatar_id': '', 'type': 'User', 'subscriptions_url': 'https://api.github.com/users/hanyucui/subscriptions', 'id': 9649417, 'organizations_url': 'https://api.github.com/users/hanyucui/orgs', 'received_events_url': 'https://api.github.com/users/hanyucui/received_events', 'gists_url': 'https://api.github.com/users/hanyucui/gists{/gist_id}', 'followers_url': 'https://api.github.com/users/hanyucui/followers'}
-#     output = get_repo_url_(df_col)
-#     assert output == "https://github.com/hanyucui"
+def test_get_repo_url():
+    df_col = "https://github.com/mlflow/mlflow/commit/b6550a79b5280dec95ae8e365ef647cc573eb3cd"
+    output = get_repo_url_(df_col)
+    assert output == "https://github.com/mlflow/mlflow/"
 
 def test_get_commit_timestamp():
     df_col = {'committer': {'date': '2019-01-01T05:17:13Z', 'name': 'Matei Zaharia', 'email': 'mateiz@users.noreply.github.com'}, 'url': 'https://api.github.com/repos/mlflow/mlflow/git/commits/b6550a79b5280dec95ae8e365ef647cc573eb3cd', 'message': 'Corrects the path to the multistep example (#787)', 'verification': {'verified': False, 'payload': None, 'reason': 'unsigned', 'signature': None}, 'tree': {'url': 'https://api.github.com/repos/mlflow/mlflow/git/trees/f830daeee06ad70db381a6a95309407d76a9c7c0', 'sha': 'f830daeee06ad70db381a6a95309407d76a9c7c0'}, 'comment_count': 0, 'author': {'date': '2019-01-01T05:17:13Z', 'name': 'Hanyu Cui', 'email': 'hanyu.cui@databricks.com'}}
