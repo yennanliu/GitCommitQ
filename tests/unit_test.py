@@ -1,14 +1,15 @@
 import datetime
+import pandas as pd
 import sys
 sys.path.append(".")
+from src.get_commit import Commit2df as Commit2df_
+from src.dump_to_postgre import DumpToPostgre as DumpToPostgre_
 from src.process_commit import (get_commit_timestamp as get_commit_timestamp_,
                                 generate_id as generate_id_,
                                 get_user_id as get_user_id_,
                                 get_repo_url as get_repo_url_,
                                 extract_inform as extract_inform_)
-from src.get_commit import Commit2df as Commit2df_
-from src.dump_to_postgre import DumpToPostgre as DumpToPostgre_
-
+                                
 def test_generate_id():
     input_id = '4d17bc5e-bfbe-4cc9-b45b-2e879a190ce3'
     output = generate_id_(input_id) 
@@ -29,8 +30,11 @@ def test_get_commit_timestamp():
     output = get_commit_timestamp_(df_col) 
     assert output == datetime.datetime(2019, 1, 1, 5, 17, 13)
 
-# def test_extract_inform():
-#     pass
+def test_extract_inform():
+    ### to fix : input exact sample scrape df, and pass it to the extract_infor, run the exact transformation
+    df = pd.DataFrame()
+    result_df = extract_inform_(df)
+    assert len(result_df) == 0
 
 
 # def test_Commit2df():

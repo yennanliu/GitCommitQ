@@ -39,7 +39,6 @@ def extract_inform(df):
     if len(df) == 0: # if there is no data, pass the data transform process
         print ('Null data, pass data process')
         return df
-    cols = ['user_id', 'commit_url', 'repo_url', 'commit_timestamp']
     result_df = pd.DataFrame()
     result_df['user_id'] = df['author'].map(get_user_id)
     result_df['commit_url'] = df['url']
