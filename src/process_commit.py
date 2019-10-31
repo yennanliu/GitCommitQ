@@ -22,7 +22,7 @@ def get_repo_url(df_col):
     get commit repo url 
     """
     try:
-        df_col.split('commit')[0]
+        return df_col.split('commit')[0]
     except:
         return 'NOT_FOUND'
 
