@@ -5,6 +5,9 @@ import psycopg2
 from utility import parse_config
 
 class DumpToPostgre:
+    """
+    class for get DB connection, data IO with Postgre
+    """
 
     def get_conn(self, postgre_config):
         """

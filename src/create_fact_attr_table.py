@@ -47,6 +47,9 @@ FROM repo;
 """
 
 def main():
+    """
+    main func that create fact tables, and attr table from raw git data
+    """
     postgre_config = parse_config('config/postgre.config')
     dumptopostgre = DumpToPostgre()
     connection = dumptopostgre.get_conn(postgre_config)
