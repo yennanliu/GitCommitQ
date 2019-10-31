@@ -6,9 +6,8 @@ from src.process_commit import (get_commit_timestamp as get_commit_timestamp_,
                                 get_user_id as get_user_id_,
                                 get_repo_url as get_repo_url_,
                                 extract_inform as extract_inform_)
-# from src.get_commit import * 
-# from src.dump_to_postgre import * 
-# from src.etl import * 
+from src.get_commit import Commit2df as Commit2df_
+from src.dump_to_postgre import DumpToPostgre as DumpToPostgre_
 
 def test_generate_id():
     input_id = '4d17bc5e-bfbe-4cc9-b45b-2e879a190ce3'
@@ -32,6 +31,19 @@ def test_get_commit_timestamp():
 
 # def test_extract_inform():
 #     pass
-    
+
+
+# def test_Commit2df():
+#     pass
+
+# def test_get_conn():
+#     pass 
+
+# def test_insert_to_table():
+#     pass 
+
+# def test_insert_all_to_table():
+#     pass 
+
 if __name__ == '__main__':
     pytest.main([__file__])
