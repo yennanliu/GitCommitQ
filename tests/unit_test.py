@@ -10,7 +10,28 @@ from src.process_commit import (get_commit_timestamp as get_commit_timestamp_,
                                 get_user_id as get_user_id_,
                                 get_repo_url as get_repo_url_,
                                 extract_inform as extract_inform_)
-                                
+ 
+postgre_config = {
+  "url":             "jdbc:postgres://localhost/gitcommit",
+  "host":            "127.0.0.1",
+  "dbname":          "gitcommit",
+  "dbtable_batch":   "fulltable",
+  "dbtable_stream":  "rddbatch",
+  "mode_batch":      "overwrite",
+  "mode_stream":     "append",
+  "user":            "postgre_user",
+  "password":        "0000",
+  "driver":          "com.postgres.jdbc.Driver",
+  "numPartitions":   18,
+  "partitionColumn": "time_slot",
+  "lowerBound":      0,
+  "upperBound":      144,
+  "stringtype":      "unspecified",
+  "topntosave":      10 }
+  
+data = {'id' : ['jack','mary'], 'age' : [10, 90]}
+df = pd.DataFrame(data)
+
 def test_generate_id():
     input_id = '4d17bc5e-bfbe-4cc9-b45b-2e879a190ce3'
     output = generate_id_(input_id) 
@@ -37,40 +58,32 @@ def test_extract_inform():
     result_df = extract_inform_(df)
     assert len(result_df) == 0
 
-
-# def test_Commit2df():
-#     pass
-
 def test_get_conn():
     dump_to_postgre_ = DumpToPostgre_()
-    postgre_config = {
-      "url":             "jdbc:postgres://localhost/gitcommit",
-      "host":            "127.0.0.1",
-      "dbname":          "gitcommit",
-      "dbtable_batch":   "fulltable",
-      "dbtable_stream":  "rddbatch",
-      "mode_batch":      "overwrite",
-      "mode_stream":     "append",
-      "user":            "postgre_user",
-      "password":        "0000",
-      "driver":          "com.postgres.jdbc.Driver",
-      "numPartitions":   18,
-      "partitionColumn": "time_slot",
-      "lowerBound":      0,
-      "upperBound":      144,
-      "stringtype":      "unspecified",
-      "topntosave":      10 }
     db_conn= dump_to_postgre_.get_conn(postgre_config)
     with db_conn.cursor() as cursor:
         cursor.execute("SELECT 1")
         result=cursor.fetchall()
-    assert  type(db_conn) == psycopg2.extensions.connection and result[0][0] == 1
+    assert type(db_conn) == psycopg2.extensions.connection and result[0][0] == 1
 
-# def test_insert_to_table():
-#     pass 
+def test_insert_to_table():
+    dump_to_postgre_ = DumpToPostgre_()
+    db_conn= dump_to_postgre_.get_conn(postgre_config)
+    # create table 
+    schema = "(id VARCHAR (10), age integer)"
+    dump_to_postgre_.create_table('test_table', schema, postgre_config)
+    # insert df to table
+    dump_to_postgre_.insert_to_table(df, 'test_table', postgre_config)
+    with db_conn.cursor() as cursor:
+        cursor.execute("SELECT * FROM test_table")
+        result=cursor.fetchall()
+    assert result == [('jack', 10), ('mary', 90)]
 
 # def test_insert_all_to_table():
 #     pass 
+
+# def test_Commit2df():
+#     pass
 
 if __name__ == '__main__':
     pytest.main([__file__])
