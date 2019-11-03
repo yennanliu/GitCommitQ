@@ -8,7 +8,6 @@ class DumpToPostgre:
     """
     class for get DB connection, data IO with Postgre
     """
-
     def get_conn(self, postgre_config):
         """
         Connect to the database
@@ -18,6 +17,17 @@ class DumpToPostgre:
             user=postgre_config['user'],
             password=postgre_config['password'],)
         return connection
+
+    def create_table(self, table_name, schema, postgre_config):
+        connection = self.get_conn(postgre_config)
+        with connection.cursor() as cursor:
+            cursor.execute("DROP TABLE IF EXISTS {}".format(table_name))
+            sql = "CREATE TABLE {} {}".format(table_name, schema)
+            print (sql)
+            cursor.execute(sql)
+            connection.commit()
+        connection.close()
+        cursor.close()
 
     def insert_to_table(self, df, table_name, postgre_config):
         """
