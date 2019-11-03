@@ -1,5 +1,6 @@
 import datetime
 import pandas as pd
+import psycopg2
 import sys
 sys.path.append(".")
 from src.get_commit import Commit2df as Commit2df_
@@ -40,8 +41,30 @@ def test_extract_inform():
 # def test_Commit2df():
 #     pass
 
-# def test_get_conn():
-#     pass 
+def test_get_conn():
+    dump_to_postgre_ = DumpToPostgre_()
+    postgre_config = {
+      "url":             "jdbc:postgres://localhost/gitcommit",
+      "host":            "127.0.0.1",
+      "dbname":          "gitcommit",
+      "dbtable_batch":   "fulltable",
+      "dbtable_stream":  "rddbatch",
+      "mode_batch":      "overwrite",
+      "mode_stream":     "append",
+      "user":            "postgre_user",
+      "password":        "0000",
+      "driver":          "com.postgres.jdbc.Driver",
+      "numPartitions":   18,
+      "partitionColumn": "time_slot",
+      "lowerBound":      0,
+      "upperBound":      144,
+      "stringtype":      "unspecified",
+      "topntosave":      10 }
+    db_conn= dump_to_postgre_.get_conn(postgre_config)
+    with db_conn.cursor() as cursor:
+        cursor.execute("SELECT 1")
+        result=cursor.fetchall()
+    assert  type(db_conn) == psycopg2.extensions.connection and result[0][0] == 1
 
 # def test_insert_to_table():
 #     pass 
