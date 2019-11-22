@@ -77,10 +77,25 @@ def test_insert_to_table():
     with db_conn.cursor() as cursor:
         cursor.execute("SELECT * FROM test_table")
         result=cursor.fetchall()
+    # TODO : drop table 
     assert result == [('jack', 10), ('mary', 90)]
 
-# def test_insert_all_to_table():
-#     pass 
+def test_insert_all_to_table():
+    # load to-insert df 
+    df = pd.read_csv('data/movie_ratings.csv')
+    dump_to_postgre_ = DumpToPostgre_()
+    db_conn= dump_to_postgre_.get_conn(postgre_config)
+    schema = "(index integer, userId integer, movieId integer, rating integer, timestamp integer)"
+    # create table 
+    dump_to_postgre_.create_table('movie_table', schema, postgre_config)
+    # insert all to table 
+    dump_to_postgre_.insert_all_to_table(df, 'movie_table', postgre_config)
+    with db_conn.cursor() as cursor:
+        cursor.execute("SELECT count(*) FROM movie_table")
+        result=cursor.fetchall()
+    # TODO : drop table 
+    #dump_to_postgre_.drop_table('movie_table', postgre_config)
+    assert result[0][0] == 100004
 
 # def test_Commit2df():
 #     pass
