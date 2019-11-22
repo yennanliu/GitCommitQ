@@ -29,6 +29,14 @@ class DumpToPostgre:
         connection.close()
         cursor.close()
 
+    def drop_table(self, table_name, postgre_config):
+        connection = self.get_conn(postgre_config)
+        with connection.cursor() as cursor:
+            cursor.execute("DROP TABLE IF EXISTS {}".format(table_name))
+            connection.commit()
+        connection.close()
+        cursor.close()
+
     def insert_to_table(self, df, table_name, postgre_config):
         """
         auto visit columns in dataframe, parse row data, and insert to postgre 
@@ -58,11 +66,15 @@ class DumpToPostgre:
             return 
         connection = self.get_conn(postgre_config)
         cols = ",".join([str(i) for i in df.columns.tolist()])
+        ds_cols = df.columns
         to_insert = df.values.tolist()
         try:
             with connection.cursor() as cursor:
                 #sql = "INSERT INTO git_commit (user_id,commit_url,repo_url,commit_timestamp,commit_id) VALUES (%s,%s,%s,%s,%s)"
-                sql = "INSERT INTO {} (" + cols + ") VALUES (%s,%s,%s,%s,%s)"
+                #sql = "INSERT INTO {} (" + cols + ") VALUES (%s,%s,%s,%s,%s)"
+                query_placeholders = ', '.join(['%s'] * len(ds_cols))
+                query_columns = ', '.join(ds_cols)
+                sql = ''' INSERT INTO {} (%s) VALUES (%s) ''' %(query_columns, query_placeholders)                      
                 sql = sql.format(table_name)
                 print (sql)
                 cursor.executemany(sql, to_insert)
