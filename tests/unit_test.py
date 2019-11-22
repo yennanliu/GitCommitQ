@@ -97,8 +97,11 @@ def test_insert_all_to_table():
     #dump_to_postgre_.drop_table('movie_table', postgre_config)
     assert result[0][0] == 100004
 
-# def test_Commit2df():
-#     pass
+def test_Commit2df():
+    expected_cols = ['comments_url','node_id','commit','parents','url','author','sha','html_url','committer']
+    url = "https://api.github.com/repos/mlflow/mlflow/commits?since=2019-01-01T00:00:00Z&until=2019-01-01T23:59:59Z"
+    df = Commit2df_(url)
+    assert list(df.columns) == expected_cols
 
 if __name__ == '__main__':
     pytest.main([__file__])
