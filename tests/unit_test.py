@@ -10,6 +10,8 @@ from src.process_commit import (get_commit_timestamp as get_commit_timestamp_,
                                 get_user_id as get_user_id_,
                                 get_repo_url as get_repo_url_,
                                 extract_inform as extract_inform_)
+from script.utility import parse_config as parse_config_
+
  
 postgre_config = {
   "url":             "jdbc:postgres://localhost/gitcommit",
@@ -102,6 +104,14 @@ def test_Commit2df():
     url = "https://api.github.com/repos/mlflow/mlflow/commits?since=2019-01-01T00:00:00Z&until=2019-01-01T23:59:59Z"
     df = Commit2df_(url)
     assert list(df.columns) == expected_cols
+
+def test_parse_config():
+    config = parse_config_("config/postgre.config")
+    assert config['url'] == "jdbc:postgres://localhost/gitcommit"
+    assert config['host'] == "127.0.0.1"
+    assert config['dbname'] == "gitcommit"
+    assert config['user'] == "postgre_user"
+    assert config['driver'] == "com.postgres.jdbc.Driver"
 
 if __name__ == '__main__':
     pytest.main([__file__])
