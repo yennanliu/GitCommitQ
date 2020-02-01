@@ -26,14 +26,16 @@
 
 ### Workflow
 ```
-Github      ----- etl.py ------>  PostgreSQL
-               (scrape data)      ↓        ↑
-                                  ↓        ↑
+Github      ----- etl.py ------>  PostgreSQL    ---------> PostgreSQL ---------> PostgreSQL
+               (scrape data)      ↓        ↑    First Normal Form     Second Normal Form 
+                                  ↓        ↑      (1NF)                (2NF)
                                   ↓________↑
                               create_fact_attr_tables.py 
                                (sync Postgre tables)
 ```
 
+### Architecture
+- dev
 
 ### DB model
 
