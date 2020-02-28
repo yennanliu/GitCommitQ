@@ -287,3 +287,13 @@ GROUP BY 1;
 
 ```
 </details>
+
+## TODO 
+
+<details>
+<summary>TODO</summary>
+
+- Update DB model :
+  - [Github's data model](https://ghtorrent.org/relational.html)
+
+</details>
