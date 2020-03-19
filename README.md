@@ -42,7 +42,9 @@ Github      ----- etl.py ------>  PostgreSQL    ---------> PostgreSQL --------->
 <details>
 <summary>DB model</summary>
 
-```
+```sql
+-- shema V1
+
 git_commit(
     sa.Column('user_id',sa.String(length=256)),
     sa.Column('commit_url', sa.String(length=256)),
@@ -74,6 +76,23 @@ commited_repo(
     sa.Column('commited_count', sa.integer()),
     sa.PrimaryKeyConstraint('repo_id') 
     )
+```
+
+```sql
+-- schema V2
+
+-- ORG                    ORG
+--  ↓                      ↓
+-- USER ---- COMMIT --->  REPO
+
+users()
+commit()
+commit_details()
+organization()
+follower()
+pull_request()
+pull_request_commit()
+
 ```
 
 </details>
