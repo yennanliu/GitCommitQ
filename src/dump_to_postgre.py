@@ -12,10 +12,14 @@ class DumpToPostgre:
         """
         Connect to the database
         """
-        connection = psycopg2.connect(
-            database=postgre_config['dbname'], 
-            user=postgre_config['user'],
-            password=postgre_config['password'],)
+        try:
+            connection = psycopg2.connect(
+                database=postgre_config['dbname'], 
+                user=postgre_config['user'],
+                password=postgre_config['password'],)
+        except Exception as e:
+            print ("failed to get DB conn. {}".format(e))
+            return None
         return connection
 
     def create_table(self, table_name, schema, postgre_config):

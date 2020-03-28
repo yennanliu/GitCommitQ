@@ -1,6 +1,7 @@
 import datetime
 import pandas as pd
 import psycopg2
+from psycopg2 import DatabaseError, ProgrammingError
 import sys
 sys.path.append(".")
 from src.dump_to_postgre import DumpToPostgre as DumpToPostgre_
@@ -47,13 +48,19 @@ class TestDBOpFunc(unittest.TestCase):
         with patch('psycopg2.connect') as mock_connect:
             mock_connect.return_value = "db_conn"
             dump_to_postgre_ = DumpToPostgre_()
-            db_conn= dump_to_postgre_.get_conn(postgre_config)
+            db_conn = dump_to_postgre_.get_conn(postgre_config)
             # with db_conn.cursor() as cursor:
             #     cursor.execute("SELECT 1")
             #     result=cursor.fetchall()
             #assert type(db_conn) == psycopg2.extensions.connection and result[0][0] == 1
-            #assert psycopg2.connect.assert_called_once()
             assert db_conn == "db_conn"
+
+    def test_get_conn_error(self):
+        with patch('psycopg2.connect') as mock_connect:
+            mock_connect.side_effect = ProgrammingError
+            dump_to_postgre_ = DumpToPostgre_()
+            db_conn = dump_to_postgre_.get_conn({"url":"random_db_url"})
+            assert db_conn == None
 
     # def test_insert_to_table():
     #     dump_to_postgre_ = DumpToPostgre_()

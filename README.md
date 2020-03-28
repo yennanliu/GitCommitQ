@@ -26,7 +26,7 @@
 
 ### Workflow
 ```
-Github      ----- etl.py ------>  PostgreSQL    ---------> PostgreSQL ---------> PostgreSQL
+Github  ----- etl.py ------>  PostgreSQL  ---------> PostgreSQL ---------> PostgreSQL
                (scrape data)      ↓        ↑    First Normal Form     Second Normal Form 
                                   ↓        ↑      (1NF)                (2NF)
                                   ↓________↑
