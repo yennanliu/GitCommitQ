@@ -41,11 +41,15 @@ class DumpToPostgre:
         Drop table at DB
         """
         connection = self.get_conn(postgre_config)
-        with connection.cursor() as cursor:
-            cursor.execute("DROP TABLE IF EXISTS {}".format(table_name))
-            connection.commit()
-        connection.close()
-        cursor.close()
+        try:
+            with connection.cursor() as cursor:
+                cursor.execute("DROP TABLE IF EXISTS {}".format(table_name))
+                connection.commit()
+            connection.close()
+            cursor.close()
+        except Exception as e:
+            print ("failed to drop table. {}".format(e))
+            return None
 
     def insert_to_table(self, df, table_name, postgre_config):
         """

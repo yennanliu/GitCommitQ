@@ -62,6 +62,16 @@ class TestDBOpFunc(unittest.TestCase):
             db_conn = dump_to_postgre_.get_conn({"url":"random_db_url"})
             assert db_conn == None
 
+    def test_drop_table(self):
+        pass 
+
+    def test_drop_table_error(self):
+        with patch('psycopg2.connect') as mock_connect:
+            dump_to_postgre_ = DumpToPostgre_()
+            response = dump_to_postgre_.drop_table("my_table_name", "my_postgre_config")
+            #self.assert_True(drop_table.called)
+            assert response == None 
+
     # def test_insert_to_table():
     #     dump_to_postgre_ = DumpToPostgre_()
     #     db_conn= dump_to_postgre_.get_conn(postgre_config)
