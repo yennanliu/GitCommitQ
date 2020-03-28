@@ -23,6 +23,9 @@ class DumpToPostgre:
         return connection
 
     def create_table(self, table_name, schema, postgre_config):
+        """
+        Create table at DB
+        """
         connection = self.get_conn(postgre_config)
         with connection.cursor() as cursor:
             cursor.execute("DROP TABLE IF EXISTS {}".format(table_name))
@@ -34,6 +37,9 @@ class DumpToPostgre:
         cursor.close()
 
     def drop_table(self, table_name, postgre_config):
+        """
+        Drop table at DB
+        """
         connection = self.get_conn(postgre_config)
         with connection.cursor() as cursor:
             cursor.execute("DROP TABLE IF EXISTS {}".format(table_name))
@@ -43,7 +49,7 @@ class DumpToPostgre:
 
     def insert_to_table(self, df, table_name, postgre_config):
         """
-        auto visit columns in dataframe, parse row data, and insert to postgre 
+        Insert single row of df into DB 
         """
         connection = self.get_conn(postgre_config)
         cols = ",".join([str(i) for i in df.columns.tolist()])
@@ -63,7 +69,7 @@ class DumpToPostgre:
 
     def insert_all_to_table(self, df, table_name, postgre_config):
         """
-        insert whole df to postgre once by executemany method
+        Insert batch (whole df) into DB 
         """
         if len(df) == 0:  # if there is no data, pass the insert process
             print ('Null data, pass data insert')
