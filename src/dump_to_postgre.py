@@ -51,6 +51,22 @@ class DumpToPostgre:
             print ("failed to drop table. {}".format(e))
             return None
 
+    def select_from_table(self, query, postgre_config):
+        """
+        Select from table 
+        """
+        connection = self.get_conn(postgre_config)
+        try:
+            with connection.cursor() as cursor:
+                cursor.execute(query)
+            data = cur.fetchall()
+            return data
+            connection.close()
+            cursor.close()
+        except Exception as e: 
+            print ("failed to select from table. {}".format(e))
+            return None
+
     def insert_to_table(self, df, table_name, postgre_config):
         """
         Insert single row of df into DB 

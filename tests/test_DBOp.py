@@ -77,6 +77,12 @@ class TestDBOpFunc(unittest.TestCase):
             #self.assert_True(drop_table.called)
             assert response == None 
 
+    def test_select_from_table(self):
+        with patch.object(DumpToPostgre_, "select_from_table", return_value=1) as mock_select_from_table, \
+        patch.object(DumpToPostgre_, "get_conn", return_value="db_conn") as mock_get_conn:
+          data = DumpToPostgre_.select_from_table()
+        assert data == 1 
+
     # def test_insert_to_table():
     #     dump_to_postgre_ = DumpToPostgre_()
     #     db_conn= dump_to_postgre_.get_conn(postgre_config)
