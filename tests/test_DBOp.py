@@ -63,7 +63,12 @@ class TestDBOpFunc(unittest.TestCase):
             assert db_conn == None
 
     def test_drop_table(self):
-        pass 
+        with patch.object(DumpToPostgre_, "get_conn", return_value="db_conn") as mock_get_conn, \
+        patch.object(DumpToPostgre_, "drop_table", return_value=True) as mock_drop_table:
+          conn = DumpToPostgre_.get_conn()
+          result = DumpToPostgre_.drop_table()
+        self.assertTrue(result)
+        assert conn == "db_conn"
 
     def test_drop_table_error(self):
         with patch('psycopg2.connect') as mock_connect:
